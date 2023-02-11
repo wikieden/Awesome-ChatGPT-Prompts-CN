@@ -3,8 +3,6 @@
 
 #### 如果你想将你的 **ChatGPT** 调教成一只猫娘，最新的教程在 [这里](https://github.com/PlexPt/awesome-chatgpt-prompts-zh/issues/12)
 
-#### [更多猫娘玩法点这个](./cat.md)
-
 
 
 ## 它能干什么? 直接问它
