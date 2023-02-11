@@ -76,7 +76,7 @@
 
 📖 **[阅读免费电子书](https://fka.gumroad.com/l/art-of-chatgpt-prompting)**
 
-后续更新中文信息
+[ChatGPT入门指南](ChatGpt-receipt.md)
 
 
 ### **想要部署自己的提示应用？**
