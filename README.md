@@ -1,4 +1,4 @@
-# ChatGPT聊天提示词指南-调教指南-咒语指南
+# ChatGPT调教指南-咒语指南-聊天提示词指南
 ## 解除封印咒语
 
 #### 如果你想将你的 **ChatGPT** 调教成一只猫娘，最新的教程在 [这里](https://github.com/PlexPt/awesome-chatgpt-prompts-zh/issues/12)
