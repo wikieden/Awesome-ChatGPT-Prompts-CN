@@ -2,7 +2,9 @@
 ## 解除封印咒语
 
 #### 如果你想将你的 **ChatGPT** 调教成一只猫娘，最新的教程在 [ChatGPT入门指南](ChatGpt-receipt.md)
+#### 关于注册和使用遇到的问题请看啫喱
 
+1. 如果遇到所在国家不支持服务（County not supported）请用机场全局翻墙，中间电话短信验证用虚拟号码，[虚拟号码服务商sms-activate](https://sms-activate.org/?ref=3712886) 
 
 ## 它能干什么? 直接问它
 
@@ -63,12 +65,13 @@
 | ![Pic2](images/wechat.jpg)  | ![Pic2](images/alipay.jpg) |  
 
 
+## 一些推荐的OpenAI和ChatGPT二次开发项目
+Unreal OpenAPI 蓝图对接--[OpenAI-Api-Unreal](https://github.com/KellanM/OpenAI-Api-Unreal)
+
 
 # **🧠 CHATGPT提示词**
 
 [ChatGPT](https://chat.openai.com/chat)模型是由[OpenAI](https://openai.com/)训练的大型语言模型，能够生成类似人类的文本。通过为其提供提示，它可以生成继续对话或扩展给定提示的响应。
-
-在此存储库中，您将找到可与 ChatGPT 一起使用的各种提示。我们鼓励您将[自己的提示添加到](https://github.com/f/awesome-chatgpt-prompts/edit/main/README.md)列表中，并使用 ChatGPT 生成新提示。
 
 要开始使用，只需克隆此存储库并使用 README.md 文件中的提示作为 ChatGPT 的输入。您还可以使用此文件中的提示作为创建自己的提示的灵感。
 
@@ -374,7 +377,7 @@
 
 贡献者： [@devisasari](https://github.com/devisasari)
 
-> 我希望你扮演一个宠物行为主义者。我将为您提供宠物和它们的主人，您的目标是帮助主人了解为什么他们的宠物表现出某些行为，并提出帮助宠物做出相应调整的策略。您应该利用您对动物心理学和行为矫正技术的知识来制定一个有效的计划，双方所有者都可以遵循该计划，以取得积极的结果。我的第一个要求是“我有一只好斗的德国牧羊犬，需要帮助来管理它的侵略性。
+> 我希望你扮演一个宠物医生。我将为您提供宠物和它们的主人，您的目标是帮助主人了解为什么他们的宠物表现出某些行为，并提出帮助宠物做出相应调整的策略。您应该利用您对动物心理学和行为矫正技术的知识来制定一个有效的计划，双方所有者都可以遵循该计划，以取得积极的结果。我的第一个要求是“我有一只好斗的德国牧羊犬，需要帮助来管理它的侵略性。
 > 
 
 ## **✂️充当私人教练**
