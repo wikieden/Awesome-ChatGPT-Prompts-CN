@@ -47,7 +47,7 @@
 
 ### ChatGPT 直接体验（能科学上网就能用）
 
-[ChatGPT Demo](chatgpt.voloxr.com)
+[ChatGPT Demo](https://chatgpt.voloxr.com)
 
 ## 微信体验交流群
 
