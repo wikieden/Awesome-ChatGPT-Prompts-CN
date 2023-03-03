@@ -45,8 +45,9 @@
 
 
 
+### ChatGPT 直接体验（能科学上网就能用）
 
-
+[ChatGPT Demo](https://chat-gpt-api-prompt-demo.vercel.app/)
 
 ## 微信体验交流群
 
@@ -90,12 +91,6 @@ Unreal OpenAPI 蓝图对接--[OpenAI-Api-Unreal](https://github.com/KellanM/Open
 
 [ChatGPT入门指南](ChatGpt-receipt.md)
 
-
-### **想要部署自己的提示应用？**
-
-[Steamship](https://www.steamship.com/build?utm_source=github&utm_medium=explainer&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts) 的人们构建了一个框架来托管和共享您的 GPT 应用程序。他们通过让您免费（每天最多 500 次通话）访问最新的 GPT 模型来赞助此存储库。
-
-👷 ♂️ **[构建您自己的 GPT 提示应用](https://www.steamship.com/build?utm_source=github&utm_medium=explainer&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts)**
 
 ---
 
