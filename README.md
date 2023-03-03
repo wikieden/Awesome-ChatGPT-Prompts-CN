@@ -47,7 +47,7 @@
 
 ### ChatGPT 直接体验（能科学上网就能用）
 
-[ChatGPT Demo](https://chat-gpt-api-prompt-demo.vercel.app/)
+[ChatGPT Demo](chatgpt.voloxr.com)
 
 ## 微信体验交流群
 
