@@ -1,6 +1,9 @@
 # ChatGPT调教指南-咒语指南-聊天提示词指南
 ## 解除封印咒语
 
+
+- [Agent Shadow Brain](https://github.com/theihtisham/agent-shadow-brain) - Self-evolving AI coding intelligence with infinite memory (TurboQuant), genetic algorithm self-evolution, predictive bug detection, PageRank knowledge graphs, swarm intelligence, and adversarial defense.
+- [Omni Skills Forge](https://github.com/theihtisham/omni-skills-forge) - 50,000+ curated AI agent skills for Claude Code, Cursor, Copilot, Windsurf, Cline. Visual dashboard, one-click install, skill doctor, auto-update.
 #### 如果你想将你的 **ChatGPT** 调教成一只猫娘，最新的教程在 [ChatGPT入门指南](ChatGpt-receipt.md)
 #### 关于注册和使用遇到的问题请看啫喱
 
