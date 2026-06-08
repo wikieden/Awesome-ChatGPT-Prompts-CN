@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 提示词大全 · 新手友好 | AI Prompts Hub</title>
+<meta name="description" content="覆盖 GPT、Claude、Gemini 及国产模型的中文 AI 提示词、文生图/视频技巧、Skill 推荐，新手友好，每日更新。" />
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --card2:#1d212b; --line:#262b36;
+    --txt:#e7eaf0; --muted:#9aa3b2; --accent:#6d8bff; --accent2:#22c55e;
+    --chip:#222735; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,sans-serif;
+    background:var(--bg);color:var(--txt);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+  header{padding:42px 0 22px;text-align:center;border-bottom:1px solid var(--line);
+    background:radial-gradient(1200px 300px at 50% -120px,rgba(109,139,255,.18),transparent)}
+  header h1{margin:0 0 8px;font-size:30px;letter-spacing:.5px}
+  header p{margin:0;color:var(--muted)}
+  .toolbar{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:18px;flex-wrap:wrap}
+  .search{flex:1;min-width:240px;max-width:520px;display:flex;align-items:center;gap:8px;
+    background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 16px}
+  .search input{flex:1;background:none;border:none;outline:none;color:var(--txt);font-size:15px}
+  .langbtn,.levelbtn{background:var(--card);border:1px solid var(--line);color:var(--txt);
+    border-radius:999px;padding:9px 14px;cursor:pointer;font-size:14px}
+  .langbtn:hover,.levelbtn:hover{border-color:var(--accent)}
+  .levelbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+  .cats{display:flex;gap:10px;overflow-x:auto;padding:18px 0 6px;scrollbar-width:none}
+  .cats::-webkit-scrollbar{display:none}
+  .cat{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:999px;
+    padding:9px 15px;cursor:pointer;font-size:14px;white-space:nowrap}
+  .cat:hover{border-color:var(--accent)}
+  .cat.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;padding:18px 0 60px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;
+    display:flex;flex-direction:column;gap:10px;transition:.15s}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .card h3{margin:0;font-size:17px}
+  .meta{display:flex;flex-wrap:wrap;gap:6px}
+  .tag{font-size:12px;color:var(--muted);background:var(--chip);border-radius:6px;padding:2px 8px}
+  .tag.lvl-beginner{color:#86efac}.tag.lvl-intermediate{color:#fcd34d}.tag.lvl-advanced{color:#fca5a5}
+  .tag.model{color:#a5b4fc}
+  .body{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px;
+    font-size:14px;color:#cdd3df;white-space:pre-wrap;max-height:170px;overflow:auto}
+  .copy{align-self:flex-start;background:var(--accent2);border:none;color:#06210f;font-weight:600;
+    border-radius:8px;padding:8px 14px;cursor:pointer;font-size:13px}
+  .copy:hover{filter:brightness(1.08)}
+  .copy.done{background:#0ea5e9;color:#fff}
+  .count{color:var(--muted);font-size:13px;padding:4px 0 0}
+  /* GitHub Star 按钮 */
+  .starbtn{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(180deg,#2a2f3a,#20242e);
+    border:1px solid var(--line);color:#ffd84d;border-radius:999px;padding:9px 16px;cursor:pointer;
+    font-size:14px;font-weight:600;transition:.15s}
+  .starbtn:hover{border-color:#ffd84d;transform:translateY(-1px)}
+  .starbtn .c{color:var(--muted);font-weight:500}
+  /* 复制后的点星引导 toast */
+  .toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,40px);opacity:0;pointer-events:none;
+    background:var(--card2);border:1px solid var(--accent);border-radius:14px;padding:14px 18px;
+    display:flex;align-items:center;gap:14px;box-shadow:0 12px 40px rgba(0,0,0,.45);z-index:50;
+    transition:.25s cubic-bezier(.2,.8,.2,1);max-width:92vw}
+  .toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+  .toast .msg{font-size:14px;color:var(--txt)}
+  .toast .star{display:inline-flex;align-items:center;gap:6px;background:#ffd84d;color:#241c00;
+    font-weight:700;border:none;border-radius:999px;padding:8px 14px;cursor:pointer;font-size:13px;white-space:nowrap}
+  .toast .x{background:none;border:none;color:var(--muted);cursor:pointer;font-size:16px}
+  footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:var(--muted);font-size:13px}
+  .empty{text-align:center;color:var(--muted);padding:60px 0}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1 id="h-title">🧠 AI 提示词大全</h1>
+    <p id="h-sub">覆盖 GPT · Claude · Gemini · 国产模型 ｜ 提示词 · 文生图 · 文生视频 · Skill ｜ 新手友好 · 每日更新</p>
+    <div class="toolbar">
+      <div class="search">
+        <span>🔍</span>
+        <input id="search" placeholder="搜索提示词、模型、关键词…" />
+      </div>
+      <button class="langbtn" id="lang">中 / EN</button>
+      <a class="starbtn" id="starHead" href="https://github.com/wikieden/Awesome-ChatGPT-Prompts-CN" target="_blank" rel="noopener">⭐ <span id="starHeadTxt">Star</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cats" id="cats"></div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;padding-top:6px">
+    <button class="levelbtn active" data-lv="all">全部难度</button>
+    <button class="levelbtn" data-lv="beginner">🟢 新手</button>
+    <button class="levelbtn" data-lv="intermediate">🟡 进阶</button>
+    <button class="levelbtn" data-lv="advanced">🔴 高级</button>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<footer class="wrap">
+  数据驱动 · 单一数据源 <code>web/data/prompts.js</code> · 网站与中英文 README 自动生成<br/>
+  Awesome-ChatGPT-Prompts-CN · MIT License
+</footer>
+
+<div class="toast" id="toast">
+  <span class="msg" id="toastMsg"></span>
+  <a class="star" id="toastStar" href="https://github.com/wikieden/Awesome-ChatGPT-Prompts-CN" target="_blank" rel="noopener">⭐ <span id="toastStarTxt">Star</span></a>
+  <button class="x" id="toastClose" aria-label="close">✕</button>
+</div>
+
+<script src="data/prompts.js"></script>
+<script>
+  const T = {
+    zh:{title:"🧠 AI 提示词大全",sub:"覆盖 GPT · Claude · Gemini · 国产模型 ｜ 提示词 · 文生图 · 文生视频 · Skill ｜ 新手友好 · 每日更新",
+        ph:"搜索提示词、模型、关键词…",all:"全部",copy:"复制",done:"已复制 ✓",count:n=>`共 ${n} 条`,empty:"没有匹配的提示词，换个关键词试试",
+        star:"点亮 Star",toast:"复制成功！觉得有用就给项目点个 ⭐ 吧，是对作者最大的支持"},
+    en:{title:"🧠 AI Prompts Hub",sub:"GPT · Claude · Gemini · China models ｜ Prompts · Image · Video · Skills ｜ Beginner-friendly · Daily updates",
+        ph:"Search prompts, models, keywords…",all:"All",copy:"Copy",done:"Copied ✓",count:n=>`${n} prompts`,empty:"No match — try another keyword",
+        star:"Star it",toast:"Copied! If this helped, a ⭐ on GitHub means a lot — thanks!"},
+    lvl:{zh:{beginner:"新手",intermediate:"进阶",advanced:"高级"},en:{beginner:"Beginner",intermediate:"Intermediate",advanced:"Advanced"}}
+  };
+  let lang="zh", cat="all", level="all", q="";
+
+  const el=s=>document.querySelector(s);
+  const grid=el("#grid"), catsBox=el("#cats");
+
+  function renderCats(){
+    const cats=[{id:"all",icon:"📚",zh:"全部",en:"All"}].concat(window.CATEGORIES);
+    catsBox.innerHTML=cats.map(c=>`<div class="cat ${c.id===cat?'active':''}" data-c="${c.id}">${c.icon||''} ${c[lang]||c.zh}</div>`).join("");
+    catsBox.querySelectorAll(".cat").forEach(n=>n.onclick=()=>{cat=n.dataset.c;renderCats();render();});
+  }
+
+  function render(){
+    const t=T[lang];
+    el("#h-title").textContent=t.title; el("#title")?.textContent;
+    el("#h-sub").textContent=t.sub; el("#search").placeholder=t.ph;
+    const list=window.PROMPTS.filter(p=>{
+      if(cat!=="all"&&p.category!==cat)return false;
+      if(level!=="all"&&p.level!==level)return false;
+      if(q){const hay=(p.title_zh+p.title_en+p.body_zh+p.body_en+(p.tags||[]).join()+(p.models||[]).join()).toLowerCase();
+        if(!hay.includes(q.toLowerCase()))return false;}
+      return true;
+    });
+    el("#count").textContent=t.count(list.length);
+    if(!list.length){grid.innerHTML=`<div class="empty">${t.empty}</div>`;return;}
+    grid.innerHTML=list.map(p=>{
+      const title=lang==="zh"?p.title_zh:(p.title_en||p.title_zh), body=lang==="zh"?p.body_zh:(p.body_en||p.body_zh);
+      const models=(p.models||[]).map(m=>`<span class="tag model">${m}</span>`).join("");
+      const lv=`<span class="tag lvl-${p.level}">${T.lvl[lang][p.level]}</span>`;
+      return `<div class="card" id="${p.id}">
+        <h3>${title}</h3>
+        <div class="meta">${lv}${models}</div>
+        <div class="body">${escapeHtml(body)}</div>
+        <button class="copy" data-id="${p.id}">${t.copy}</button>
+      </div>`;
+    }).join("");
+    grid.querySelectorAll(".copy").forEach(b=>b.onclick=()=>{
+      const p=window.PROMPTS.find(x=>x.id===b.dataset.id);
+      const txt=lang==="zh"?p.body_zh:(p.body_en||p.body_zh);
+      navigator.clipboard.writeText(txt).then(()=>{
+        b.textContent=T[lang].done;b.classList.add("done");
+        setTimeout(()=>{b.textContent=T[lang].copy;b.classList.remove("done");},1400);
+        showStarToast();
+      });
+    });
+  }
+  function escapeHtml(s){return s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+
+  // 复制后的点星引导（带节流）
+  // 规则：已点过星 → 永不再弹；否则本会话首次复制弹一次，之后每复制 5 次再弹一次。
+  let toastTimer=null, copyCount=0;
+  const hasStarred=()=>{try{return localStorage.getItem("acp_starred")==="1";}catch(e){return false;}};
+  const markStarred=()=>{try{localStorage.setItem("acp_starred","1");}catch(e){}el("#toast").classList.remove("show");};
+  function showStarToast(){
+    if(hasStarred())return;
+    copyCount++;
+    if(!(copyCount===1||copyCount%5===0))return;
+    el("#toastMsg").textContent=T[lang].toast;
+    el("#toastStarTxt").textContent=T[lang].star;
+    const tt=el("#toast");tt.classList.add("show");
+    clearTimeout(toastTimer);toastTimer=setTimeout(()=>tt.classList.remove("show"),6000);
+  }
+  el("#toastClose").onclick=()=>el("#toast").classList.remove("show");
+  // 点了任意 Star 按钮就视为已点星，不再打扰
+  el("#toastStar").addEventListener("click",markStarred);
+  el("#starHead").addEventListener("click",markStarred);
+
+  el("#search").addEventListener("input",e=>{q=e.target.value;render();});
+  el("#lang").onclick=()=>{lang=lang==="zh"?"en":"zh";document.documentElement.lang=lang==="zh"?"zh-CN":"en";
+    el("#starHeadTxt").textContent=T[lang].star;renderCats();render();};
+  document.querySelectorAll(".levelbtn").forEach(b=>b.onclick=()=>{
+    level=b.dataset.lv;document.querySelectorAll(".levelbtn").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");render();});
+
+  el("#starHeadTxt").textContent=T[lang].star;
+  renderCats();render();
+</script>
+</body>
+</html>
