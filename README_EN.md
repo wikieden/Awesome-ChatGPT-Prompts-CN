@@ -13,10 +13,10 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 - 🚀 **Getting Started** (10)
 - 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (8)
-- 🎬 **Text-to-Video** (13)
-- 🧩 **Skills** (8)
-- 💡 **Prompt Craft** (28)
+- 🖼️ **Text-to-Image** (10)
+- 🎬 **Text-to-Video** (15)
+- 🧩 **Skills** (11)
+- 💡 **Prompt Craft** (31)
 
 ## 🚀 Getting Started
 
@@ -868,6 +868,16 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 > What makes the latest image models (Google's Nano Banana 2 / Nano Banana Pro and peers) genuinely useful isn't nailing it in one shot — it's 'generate once, then refine step by step in plain language.' Treat generation as a conversation: 1) Get a base image first (text description or reference); 2) Each following turn, change just one thing and spell out 'what changes, what stays' — e.g. 'keep the person, pose and background unchanged; only swap the top to a beige knit; same lighting'; 3) To reuse the same character across images, lock one 'character sheet' image as reference, attach it every time, and say 'same person as the reference, only the scene/action changes'; 4) When text or a detail comes out wrong, mask that region and inpaint only it — don't re-roll the whole image. Nano Banana 2 costs markedly less per image (a few cents), which suits multi-round trial and error. Template: 'Using this image as the base, change only [X], keeping [character/composition/lighting] exactly the same.' The key to staying cheap and stable is 'small edits, lock the rest.'
 
+### Midjourney V8.1 Credit-Saving Workflow: Draft Fast, Then Rerun as HD
+`🟡 Intermediate ｜ Midjourney`  ·  整理自 2026-06 Midjourney 更新
+
+> Now that Midjourney's default model is V8.1, it adds a "Draft mode" and `--preview` built for cheap, fast exploration: draft renders are quick and low-cost, and once composition and style are set you can hit "Rerun as HD" to turn the pick into a finished high-res image — far more economical than rolling HD from the start. Recommended flow: 1) Draft stage — turn on Draft mode and run 3-4 directions with short "subject + scene + style + light" prompts, judging only composition and mood, not details; 2) Lock — pick one and fix the look with a style reference (--sref) or character reference for consistency; 3) Finalize — hit "Rerun as HD" on the chosen draft, then add format as needed (e.g. --ar 16:9); 4) Refine — use vary for local tweaks instead of re-rolling the whole image. Using this flow, break my idea below into a "draft prompt + finalize notes": {paste your image idea}
+
+### Nano Banana Pro Character Consistency: Define Character Variables + Split Reference Images
+`🟡 Intermediate ｜ Nano Banana · Gemini · 即梦 · 可灵 Kling`  ·  整理自 2026-06 Google Nano Banana Pro 提示指南
+
+> One of Google Nano Banana Pro's (Gemini 3 Pro Image) strongest abilities is character consistency: a single workflow can hold up to 5 characters and 14 objects without redrawing faces each time — ideal for comics, storyboards, and product-line visuals. Three beginner steps: 1) Define the character fully in the very first prompt — name it as a variable, e.g. "CHARACTER_A: Asian woman around 30, shoulder-length black hair, round glasses, beige trench coat," then just say "put CHARACTER_A by the cafe window" later; session memory keeps the look stable; 2) Assign roles to multiple reference images — "use Image 1 as the character reference, keep this exact face and features; use Image 2 as the pose reference, put the character in that pose"; 3) Write prompts as subject + composition + action + scene + style, then add camera, lighting, and any on-image text. Turn my characters and plot into a set of consistent storyboard prompts in the format above: {describe characters and story}
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -942,6 +952,16 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 > A single text-to-video model usually has two hard limits: past 5-10 seconds the subject's face starts to "morph" and flicker, and each clip is short. The practical fix is to chain different models into a pipeline by their strengths, rather than expecting one model to do it all: 1) Lock the character first — use an image model to produce one high-quality "character reference" still, and feed it as the reference image (image-to-video) for every shot to keep the same face; 2) Generate shot by shot — split the script into several 5-second shots, each fed the same reference image plus the previous shot's last frame (use first/last-frame control to stitch, e.g. Kling); 3) Play to strengths — big-motion shots on Kling, quality/brand shots on a more stable-quality model, Chinese-language/e-commerce scenes on Jimeng; 4) Assemble in post — align rhythm in your editor, hide seams behind transitions, and unify color grading to mask differences between models. Given my script, produce a shot list (per shot: subject reference, action, camera, recommended model, how it links to the previous shot): {paste your script}
 
+### Midjourney Enters AI Video: Extend a Still to 21 Seconds, and How to Choose a Model
+`🟡 Intermediate ｜ Midjourney · Sora · 可灵 · 即梦`  ·  整理自 2026-06 Midjourney 视频更新
+
+> Midjourney V8 now supports text-to-video and image-to-video (around 10 seconds at 60fps) and can extend progressively to about 21 seconds, with image quality as its strength. But it isn't a one-size-fits-all tool — it splits work with Sora, Kling, and Jimeng, so don't fixate on just one: 1) Quality/mood clips — favor Midjourney; generate its image first, then image-to-video for the most consistent style; 2) Big motion/camera moves — Kling is steadier for running, jumping, and orbiting shots; 3) Chinese scenes/e-commerce voiceovers — Jimeng understands local assets and vertical format better; 4) Long narrative/physical consistency — Sora-class models have the edge on long-take coherence. Practical tip: lock a "character still" in an image model first, generate a 5-10s master shot via image-to-video, and extend progressively rather than rolling the full length at once — cheaper and more controllable. Given my scene description, give me "recommended model + first-frame prompt + camera and extension plan": {paste your shot idea}
+
+### Which AI Video Tool Should I Use? (Mid-2026 Picker: Sora / Kling / Jimeng / Veo / Runway)
+`🟢 Beginner ｜ Sora · 可灵 Kling · 即梦 · Veo · Runway`  ·  整理自 2026 AI 视频模型横评
+
+> I'm a beginner who wants to make AI video but doesn't know which tool to pick. Using a table of Scenario → Recommended tool → One-line reason, help me decide across these needs: 1) cinematic realism and complex physical motion; 2) coherent character motion with accurate lip-sync; 3) usable in China, Chinese-prompt-friendly, fast to render; 4) image-to-video, animating a single still; 5) tight budget, want to try free first. As of mid-2026 the commonly compared options include OpenAI Sora 2, Kuaishou Kling 2.x, ByteDance Jimeng, Google Veo 3, and Runway Gen-3/4. Objectively explain each one's strengths and weaknesses, flag the duration/resolution/watermark limits, and end with one general tip: render a 5-second test first, then extend.
+
 ## 🧩 Skills
 
 ### Skill: prompt auto-optimizer
@@ -983,6 +1003,21 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟡 Intermediate ｜ Claude · Gemini · Nano Banana`  ·  整理自 2026-06 Agent 工作流
 
 > Plenty of people write copy or build pages with AI, then have to switch to a separate tool and copy-paste just to get images — breaking the flow back and forth. The popular 2026 approach is to give your agent (Claude Code, various agent clients) an 'image-generation skill': describe what you want in the same session, and it calls an image model (e.g. Google Nano Banana 2 / Pro) directly, dropping the image file into your current project directory without leaving the chat. Why it helps: 1) Context stays intact — it knows the page/article you're working on, so the image style matches; 2) Iterate in place — just say 'recolor this one, add a title' and regenerate; 3) Batch — 'give each of these 5 sections a header image' in one go. How to use it: install the relevant image-gen / nano-banana skill in your agent; trigger phrases are usually 'generate an image of…' or 'add an illustration.' When writing the request, still follow the three image essentials — subject, style/lighting, aspect ratio — and for text in the image, give it word-for-word in quotes. Tip: save generated images into the project and record the prompt you used, so it's easy to tweak later.
+
+### Run Long-Horizon Tasks with Claude Fable 5: Sustained Work, Self-Testing, Sub-Agents
+`🔴 Advanced ｜ Claude`  ·  整理自 2026-06 Anthropic 发布
+
+> Claude Fable 5 (released 2026-06-09) is built for long-horizon agentic work: placed inside an agent harness like Claude Code, it can work across many stages, delegate sub-tasks to sub-agents, and write its own tests to check its results — and its edge over other models grows the longer and more complex the task. To use it as a "capable engineer" rather than a back-and-forth chatbot, do three things when you instruct it: 1) Give the goal and acceptance criteria, not the steps — "Implement feature X; done means: passes these tests, breaks no existing functionality, and includes a note on how to verify" — leaving the "how" for it to plan; 2) Require self-checking — "After each stage, write and run tests yourself, fix failures, then move to the next stage"; 3) Make it plan before acting — "First list a staged plan and which parts you'll delegate to sub-agents, then execute after I confirm." Using this structure, turn my request below into a long-horizon task brief for Fable 5: {paste your request}
+
+### Turn a Repeated Prompt into a Claude Skill (the SKILL.md Workflow)
+`🔴 Advanced ｜ Claude`  ·  整理自 Anthropic Agent Skills 文档
+
+> If you keep pasting the same long instruction into the AI, capture it as a reusable skill instead. The Claude Agent Skills approach: a skill is a folder containing a SKILL.md whose YAML frontmatter sets name and description ("what it does and when to use it"), with clear step-by-step instructions in the body and optional scripts or templates. Claude uses progressive disclosure, loading it only when a task matches — so you can bundle large context without crowding everyday chats. Please convert this prompt I reuse constantly into a proper SKILL.md: 1) give it a short skill name; 2) write a precise description including the trigger scenario; 3) turn my instruction into numbered steps; 4) point out which pieces should become replaceable variables; 5) add a note telling the model to self-check which step went wrong on failure. My original prompt: {paste the prompt you reuse}
+
+### Let AI Work Proactively For You: Gemini Spark and Daily Brief
+`🟡 Intermediate ｜ Gemini · GPT · Claude`  ·  整理自 2026-06 Google I/O Gemini Spark / Daily Brief
+
+> At Google I/O 2026, Gemini became a proactive assistant: Spark is a 24/7 cloud-based AI agent that keeps handling tasks after you close your laptop (e.g. spotting hidden subscriptions in a credit-card statement, watching school emails for deadlines, turning scattered meeting notes into polished docs and draft emails); Daily Brief builds a morning digest from your calendar, reminders, and travel, prioritized by recurring senders, calendar overlap, and urgency, with suggested next steps (note: both need AI Ultra and Gmail/Calendar/Drive access). Even without it, you can borrow this proactive-agent pattern with any AI: Act as my proactive assistant and turn the day's info I paste below into a Daily Brief — 1) rank the 3-5 must-do items by urgency/importance; 2) give a one-line next action for each; 3) flag anything with a time conflict or awaiting my reply; 4) end with the noise I can safely ignore today. Here is my day: {paste schedule/email highlights/to-dos}
 
 ## 💡 Prompt Craft
 
@@ -1151,5 +1186,20 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟡 Intermediate ｜ Kimi`  ·  整理自 2026-06 模型动态
 
 > Kimi has long been strong at very long documents, and its newer K-series multimodal reasoning model can read text and charts/screenshots together for cross-modal reasoning. To make it truly comprehend rather than just "finish reading," how you ask matters: 1) Give the task and role first — "You are an analyst reviewing this material; your goal is to answer the 3 questions below" — then upload the document; 2) Make it locate before answering — "first list the relevant sections/page numbers/figure IDs, then answer based on them" — forcing evidence and reducing fabrication; 3) Ask across text and image — supply the chart screenshot alongside the body text and ask "does this figure support or contradict the conclusion in paragraph X?"; 4) Demand checkable output — "after each conclusion, cite the source in parentheses (page/figure); if the material doesn't mention it, write 'not stated in the source'." Design a question list for my {contract/paper/financial report} this way: {paste the document or a description}
+
+### Use Gemini's Daily Brief and Spark Agent: Turn AI Into a Proactive Helper
+`🟢 Beginner ｜ Gemini`  ·  整理自 2026-06 Gemini 更新
+
+> With Gemini 3.5 Pro live, the Gemini app added two beginner-friendly features: a "Daily Brief" that automatically summarizes your schedule, key emails, and news each morning, and "Spark," a personal agent that can run multi-step tasks for you. To get the most out of them, spell out "trigger + sources + output format": 1) Set up the Daily Brief — "Every day at 8am, give me a brief of 5 items max: today's schedule conflicts, emails needing my reply, and one key industry headline, each in a single sentence"; 2) Dispatch Spark — break the goal into executable steps: "Compare the price and reviews of these 3 products, put them in a table, and tell me which you recommend and why"; 3) Set boundaries — "If something is uncertain, mark it 'needs my confirmation' and don't make final decisions for me." Rewrite my everyday request below into one clear Gemini instruction: {paste your request}
+
+### Code with an Open-Source Chinese Model: GLM-5.2's 1M Context and End-to-End Long Tasks
+`🔴 Advanced ｜ 智谱`  ·  整理自 2026-06 智谱 GLM-5.2 发布
+
+> Zhipu's GLM-5.2 (launched 2026-06-17 and open-sourced under the MIT license) ranked #1 among generally available models on Code Arena, built around a lossless 1M context and long-horizon coding: it can fairly reliably go from development through integration and testing to packaging and release, narrowing the gap with Claude Opus 4.8 to 1%-4% on SWE-style benchmarks, and it can be self-hosted — good for teams that need data control. To exploit its long context and long-task ability, when you prompt: 1) Feed the full context at once — give the whole repo structure, relevant files, and error logs together (the 1M window fits it), instead of drip-feeding across turns; 2) Demand verifiable output — "after changes, give a diff, explain what changed, and include minimal repro/test steps"; 3) Let it plan long tasks — "first list an implementation plan and risk points, then execute step by step, each independently revertible"; 4) For self-hosting, state whether you use the open weights or the API so it gives env-appropriate dependencies and commands. Turn my development request below into a long-context task brief suited to GLM-5.2: {paste the request plus relevant code/errors}
+
+### When New Models Flood In, Build Your Own Test Set First
+`🟡 Intermediate ｜ GPT · Claude · Gemini · DeepSeek`  ·  整理自 2026-06 新模型发布潮
+
+> By mid-2026, new models like GPT-5.6, Gemini 3.5 Pro, and Claude 4.8/Fable are landing almost at once, and leaderboards shift daily. Instead of chasing rankings, build a test set that matches your real usage, and rerun the same questions on each new model to see which actually fits you. Have the AI help you build it: based on my frequent use cases, generate 8-10 representative test questions (covering what I do most — e.g. rewriting, long-doc summarizing, coding, data wrangling, Chinese phrasing), each with input, key points the ideal answer must hit, and a 1-5 scoring rubric. Then tell me which metrics to log beyond answer quality (latency, cost per task, error rate) and how to compare models fairly with the same set. My main use cases are: {describe your everyday tasks}
 
 <!-- AUTO-PROMPTS:END -->

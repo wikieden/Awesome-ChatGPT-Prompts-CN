@@ -4253,5 +4253,233 @@ window.PROMPTS = [
     ],
     "source": "整理自 2026-06 模型动态",
     "updated": "2026-06-24"
+  },
+  {
+    "id": "craft-gemini-daily-brief-spark",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "用 Gemini 的「每日简报」和 Spark 助理：把 AI 变成主动帮手",
+    "title_en": "Use Gemini's Daily Brief and Spark Agent: Turn AI Into a Proactive Helper",
+    "body_zh": "Gemini 3.5 Pro 上线后，Gemini App 也更新了两个对新手很友好的功能：「每日简报（Daily Brief）」会在早上自动汇总你关心的日程、邮件要点和新闻；「Spark」则是个能替你跑多步任务的个人助理。要用好它们，提需求时把「触发时机 + 信息来源 + 输出格式」说清楚最有效：1）配每日简报——「每天早 8 点，给我一份 5 条以内的简报：今天的日程冲突、需要我回复的邮件、关注行业的 1 条要闻，每条一句话」；2）派 Spark 跑任务——把目标拆成可执行步骤，「帮我对比这 3 个产品的价格和评价，整理成表格，列出你推荐哪个及理由」；3）给边界——「信息不确定就标注『需我确认』，不要替我做最终决定」。请把我下面这个日常需求，改写成一条清晰的 Gemini 指令：{粘贴你的需求}",
+    "body_en": "With Gemini 3.5 Pro live, the Gemini app added two beginner-friendly features: a \"Daily Brief\" that automatically summarizes your schedule, key emails, and news each morning, and \"Spark,\" a personal agent that can run multi-step tasks for you. To get the most out of them, spell out \"trigger + sources + output format\": 1) Set up the Daily Brief — \"Every day at 8am, give me a brief of 5 items max: today's schedule conflicts, emails needing my reply, and one key industry headline, each in a single sentence\"; 2) Dispatch Spark — break the goal into executable steps: \"Compare the price and reviews of these 3 products, put them in a table, and tell me which you recommend and why\"; 3) Set boundaries — \"If something is uncertain, mark it 'needs my confirmation' and don't make final decisions for me.\" Rewrite my everyday request below into one clear Gemini instruction: {paste your request}",
+    "models": [
+      "Gemini"
+    ],
+    "tags": [
+      "通用技巧",
+      "Gemini",
+      "AI助理",
+      "效率",
+      "入门"
+    ],
+    "source": "整理自 2026-06 Gemini 更新",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "skill-fable5-long-horizon-agent",
+    "category": "skill",
+    "level": "advanced",
+    "title_zh": "让 Claude Fable 5 跑「长程任务」：连续工作、自测、分派子代理",
+    "title_en": "Run Long-Horizon Tasks with Claude Fable 5: Sustained Work, Self-Testing, Sub-Agents",
+    "body_zh": "Claude Fable 5（2026-06-09 发布）最大的卖点是长程 agentic 能力：放进 Claude Code 这类 agent 框架里，它能跨多个阶段连续工作、把子任务分派给子代理，并自己写测试检查结果。任务越长越复杂，它相对其他模型的优势越明显。要把它当「能干活的工程师」而不是「一问一答的聊天机器人」用，给指令时要做三件事：1）给目标和验收标准，不要给步骤——「实现 X 功能；完成的标准是：通过这些测试、不破坏现有功能、附一段如何验证的说明」，把『怎么做』留给它规划；2）要求自检——「每完成一个阶段，先自己写并跑测试，失败就修，再进入下一阶段」；3）让它先出计划再动手——「先列出分阶段计划和你打算分派给子代理的部分，等我确认后再执行」。请按这个结构，把我下面这个需求写成一份给 Fable 5 的长程任务说明：{粘贴你的需求}",
+    "body_en": "Claude Fable 5 (released 2026-06-09) is built for long-horizon agentic work: placed inside an agent harness like Claude Code, it can work across many stages, delegate sub-tasks to sub-agents, and write its own tests to check its results — and its edge over other models grows the longer and more complex the task. To use it as a \"capable engineer\" rather than a back-and-forth chatbot, do three things when you instruct it: 1) Give the goal and acceptance criteria, not the steps — \"Implement feature X; done means: passes these tests, breaks no existing functionality, and includes a note on how to verify\" — leaving the \"how\" for it to plan; 2) Require self-checking — \"After each stage, write and run tests yourself, fix failures, then move to the next stage\"; 3) Make it plan before acting — \"First list a staged plan and which parts you'll delegate to sub-agents, then execute after I confirm.\" Using this structure, turn my request below into a long-horizon task brief for Fable 5: {paste your request}",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Skill",
+      "Claude",
+      "Agent",
+      "长程任务",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Anthropic 发布",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "image-midjourney-draft-to-hd-workflow",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Midjourney V8.1 省额度出图法：草稿模式快速试 → 满意再转 HD",
+    "title_en": "Midjourney V8.1 Credit-Saving Workflow: Draft Fast, Then Rerun as HD",
+    "body_zh": "Midjourney 默认模型升到 V8.1 后，多了「草稿模式（Draft mode）」和 `--preview`，专门用来低成本试方向：草稿出图又快又省，定好构图与风格后再用「Rerun as HD」一键转成高清成品，比一上来就高清狂抽省很多额度。推荐流程：1）草稿阶段——开 Draft mode，用「主体 + 场景 + 风格 + 光线」短句快速跑 3-4 个方向，只看构图和氛围对不对，先不纠结细节；2）锁定——挑中一版，用风格参考（--sref）或角色参考固定风格/人物，保证后续一致；3）定稿——对满意的草稿点「Rerun as HD」出高清，再按需求加画幅（如 --ar 16:9）；4）微调——用 vary 局部调整，而不是整张重抽。请按这个流程，把我这句画面想法拆成「草稿提示词 + 定稿要点」：{粘贴你的画面想法}",
+    "body_en": "Now that Midjourney's default model is V8.1, it adds a \"Draft mode\" and `--preview` built for cheap, fast exploration: draft renders are quick and low-cost, and once composition and style are set you can hit \"Rerun as HD\" to turn the pick into a finished high-res image — far more economical than rolling HD from the start. Recommended flow: 1) Draft stage — turn on Draft mode and run 3-4 directions with short \"subject + scene + style + light\" prompts, judging only composition and mood, not details; 2) Lock — pick one and fix the look with a style reference (--sref) or character reference for consistency; 3) Finalize — hit \"Rerun as HD\" on the chosen draft, then add format as needed (e.g. --ar 16:9); 4) Refine — use vary for local tweaks instead of re-rolling the whole image. Using this flow, break my idea below into a \"draft prompt + finalize notes\": {paste your image idea}",
+    "models": [
+      "Midjourney"
+    ],
+    "tags": [
+      "文生图",
+      "Midjourney",
+      "工作流",
+      "省额度",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Midjourney 更新",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "video-midjourney-v8-text-to-video",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "Midjourney 进军文生视频：从一张图延展到 21 秒，怎么选模型",
+    "title_en": "Midjourney Enters AI Video: Extend a Still to 21 Seconds, and How to Choose a Model",
+    "body_zh": "Midjourney V8 现在支持文生视频和图生视频（约 10 秒、60fps），还能逐段延展到约 21 秒，画面质感是它的强项。但它不是万能，和 Sora、可灵、即梦各有分工，新手别只盯一个：1）画质/氛围短片——优先 Midjourney，先用它出的图做「图生视频」，风格最统一；2）大幅度动作/运镜——可灵更稳，人物跑跳、镜头环绕交给它；3）中文场景/电商口播——即梦更懂本地素材和竖屏；4）长叙事/物理一致——Sora 类模型在长镜头连贯上更有优势。实操建议：先在文生图里定好「定妆图」，再用图生视频出 5-10 秒母镜头，逐段延展而不是一次抽满，省额度也更可控。请根据我的画面描述，给出「推荐模型 + 首图提示词 + 运镜与延展计划」：{粘贴你的画面想法}",
+    "body_en": "Midjourney V8 now supports text-to-video and image-to-video (around 10 seconds at 60fps) and can extend progressively to about 21 seconds, with image quality as its strength. But it isn't a one-size-fits-all tool — it splits work with Sora, Kling, and Jimeng, so don't fixate on just one: 1) Quality/mood clips — favor Midjourney; generate its image first, then image-to-video for the most consistent style; 2) Big motion/camera moves — Kling is steadier for running, jumping, and orbiting shots; 3) Chinese scenes/e-commerce voiceovers — Jimeng understands local assets and vertical format better; 4) Long narrative/physical consistency — Sora-class models have the edge on long-take coherence. Practical tip: lock a \"character still\" in an image model first, generate a 5-10s master shot via image-to-video, and extend progressively rather than rolling the full length at once — cheaper and more controllable. Given my scene description, give me \"recommended model + first-frame prompt + camera and extension plan\": {paste your shot idea}",
+    "models": [
+      "Midjourney",
+      "Sora",
+      "可灵",
+      "即梦"
+    ],
+    "tags": [
+      "文生视频",
+      "Midjourney",
+      "选型",
+      "工作流",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Midjourney 视频更新",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "craft-glm5-2-opensource-coding",
+    "category": "craft",
+    "level": "advanced",
+    "title_zh": "用开源国产模型做编程：GLM-5.2 的 1M 上下文与端到端长程任务",
+    "title_en": "Code with an Open-Source Chinese Model: GLM-5.2's 1M Context and End-to-End Long Tasks",
+    "body_zh": "智谱 GLM-5.2（2026-06-17 上线并以 MIT 协议开源）在 Code Arena 上拿到「全球可用模型第一」，主打 1M 无损上下文和长程编程：它能较稳地从开发、联调、测试一路做到打包上线，与 Claude Opus 4.8 的差距在 SWE 类评测上缩到 1%-4%，还能本地/私有部署，适合对数据可控有要求的团队。要把它的长上下文和长程能力用足，提需求时：1）一次喂全上下文——把整个仓库结构、相关文件、报错日志一起给（1M 窗口装得下），别挤牙膏式分多轮；2）要可验证的产出——「改完后给出 diff、说明改了什么、附最小复现/测试步骤」；3）让它自己规划长任务——「先列实现计划与风险点，再分步执行，每步可单独回滚」；4）需要私有部署时——说明用的是开源权重还是 API，让它按对应环境给依赖与命令。请把我下面这个开发需求，整理成一份适合 GLM-5.2 的长上下文任务说明：{粘贴需求与相关代码/报错}",
+    "body_en": "Zhipu's GLM-5.2 (launched 2026-06-17 and open-sourced under the MIT license) ranked #1 among generally available models on Code Arena, built around a lossless 1M context and long-horizon coding: it can fairly reliably go from development through integration and testing to packaging and release, narrowing the gap with Claude Opus 4.8 to 1%-4% on SWE-style benchmarks, and it can be self-hosted — good for teams that need data control. To exploit its long context and long-task ability, when you prompt: 1) Feed the full context at once — give the whole repo structure, relevant files, and error logs together (the 1M window fits it), instead of drip-feeding across turns; 2) Demand verifiable output — \"after changes, give a diff, explain what changed, and include minimal repro/test steps\"; 3) Let it plan long tasks — \"first list an implementation plan and risk points, then execute step by step, each independently revertible\"; 4) For self-hosting, state whether you use the open weights or the API so it gives env-appropriate dependencies and commands. Turn my development request below into a long-context task brief suited to GLM-5.2: {paste the request plus relevant code/errors}",
+    "models": [
+      "智谱"
+    ],
+    "tags": [
+      "通用技巧",
+      "智谱",
+      "GLM",
+      "开源",
+      "编程",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 智谱 GLM-5.2 发布",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "nano-banana-character-consistency",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Nano Banana Pro 角色一致性：定义角色变量 + 参考图分工",
+    "title_en": "Nano Banana Pro Character Consistency: Define Character Variables + Split Reference Images",
+    "body_zh": "谷歌 Nano Banana Pro（Gemini 3 Pro Image）最强的能力之一是「角色一致性」：单个工作流里能稳住最多 5 个角色、14 个物体的样貌，做连环画、分镜、产品系列图时不用每张重抽脸。新手用法三步：1）第一条提示词就把角色「一次定义清楚」——给角色起名当变量，例如「CHARACTER_A：约30岁亚洲女性，齐肩黑发，圆框眼镜，米色风衣」，后续直接说「让 CHARACTER_A 站在咖啡馆窗边」即可，它会靠「会话记忆」记住外貌；2）多张参考图要「分工说明」——「图1 作为人物参考，保持这张脸和五官；图2 作为姿势参考，让人物摆成这个动作」；3）提示词按「主体+构图+动作+场景+风格」写，再补镜头、光线、画面里的文字。把我想要的角色和场景按上面格式整理成一组连续分镜提示词：{描述角色与剧情}",
+    "body_en": "One of Google Nano Banana Pro's (Gemini 3 Pro Image) strongest abilities is character consistency: a single workflow can hold up to 5 characters and 14 objects without redrawing faces each time — ideal for comics, storyboards, and product-line visuals. Three beginner steps: 1) Define the character fully in the very first prompt — name it as a variable, e.g. \"CHARACTER_A: Asian woman around 30, shoulder-length black hair, round glasses, beige trench coat,\" then just say \"put CHARACTER_A by the cafe window\" later; session memory keeps the look stable; 2) Assign roles to multiple reference images — \"use Image 1 as the character reference, keep this exact face and features; use Image 2 as the pose reference, put the character in that pose\"; 3) Write prompts as subject + composition + action + scene + style, then add camera, lighting, and any on-image text. Turn my characters and plot into a set of consistent storyboard prompts in the format above: {describe characters and story}",
+    "models": [
+      "Nano Banana",
+      "Gemini",
+      "即梦",
+      "可灵 Kling"
+    ],
+    "tags": [
+      "画图",
+      "角色一致性",
+      "Nano Banana",
+      "分镜",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Google Nano Banana Pro 提示指南",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "video-model-picker-2026",
+    "category": "video",
+    "level": "beginner",
+    "title_zh": "我该用哪个 AI 视频工具？（2026 中 Sora/可灵/即梦/Veo/Runway 选择）",
+    "title_en": "Which AI Video Tool Should I Use? (Mid-2026 Picker: Sora / Kling / Jimeng / Veo / Runway)",
+    "body_zh": "我是新手，想做 AI 视频但不知道选哪个工具。请用「场景 → 推荐工具 → 一句话理由」的表格帮我判断这几类需求：1）想要电影级真实感和复杂物理运动；2）人物/角色动作连贯、口型对得上；3）国内可直接用、中文提示词友好、出片快；4）图生视频、把一张静态图动起来；5）预算有限想先免费试。已知 2026 年中常被对比的有 OpenAI Sora 2、快手可灵 Kling 2.x、字节即梦、谷歌 Veo 3、Runway Gen-3/4。请客观说明各自强项与短板，并提醒不同工具的时长/分辨率/水印限制，最后给我一条「先做 5 秒测试再扩展」的通用建议。",
+    "body_en": "I'm a beginner who wants to make AI video but doesn't know which tool to pick. Using a table of Scenario → Recommended tool → One-line reason, help me decide across these needs: 1) cinematic realism and complex physical motion; 2) coherent character motion with accurate lip-sync; 3) usable in China, Chinese-prompt-friendly, fast to render; 4) image-to-video, animating a single still; 5) tight budget, want to try free first. As of mid-2026 the commonly compared options include OpenAI Sora 2, Kuaishou Kling 2.x, ByteDance Jimeng, Google Veo 3, and Runway Gen-3/4. Objectively explain each one's strengths and weaknesses, flag the duration/resolution/watermark limits, and end with one general tip: render a 5-second test first, then extend.",
+    "models": [
+      "Sora",
+      "可灵 Kling",
+      "即梦",
+      "Veo",
+      "Runway"
+    ],
+    "tags": [
+      "视频",
+      "选型",
+      "新手",
+      "对比",
+      "图生视频"
+    ],
+    "source": "整理自 2026 AI 视频模型横评",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "claude-skill-from-repeat-prompt",
+    "category": "skill",
+    "level": "advanced",
+    "title_zh": "把反复用的提示词沉淀成 Claude Skill（SKILL.md 工作流）",
+    "title_en": "Turn a Repeated Prompt into a Claude Skill (the SKILL.md Workflow)",
+    "body_zh": "如果你每次都要把同一段长指令复制给 AI，不如把它沉淀成一个可复用「技能」。Claude Agent Skills 的做法：一个技能就是一个文件夹，里面放一个 SKILL.md，开头用 YAML 写 name 和 description（描述「做什么、什么时候用」），正文写清步骤，需要时再附脚本或模板；Claude 会按「渐进式加载」只在任务匹配时读取它，所以塞再多上下文也不挤占日常对话。请帮我把下面这段我反复使用的提示词，改写成一个规范的 SKILL.md：1）起一个简短技能名；2）写一句精准的 description（含触发场景）；3）把我的指令整理成有编号的步骤；4）指出哪些信息应做成可替换变量；5）补一条「失败时让模型自检哪一步出错」的说明。我的原始提示词是：{粘贴你反复使用的提示词}",
+    "body_en": "If you keep pasting the same long instruction into the AI, capture it as a reusable skill instead. The Claude Agent Skills approach: a skill is a folder containing a SKILL.md whose YAML frontmatter sets name and description (\"what it does and when to use it\"), with clear step-by-step instructions in the body and optional scripts or templates. Claude uses progressive disclosure, loading it only when a task matches — so you can bundle large context without crowding everyday chats. Please convert this prompt I reuse constantly into a proper SKILL.md: 1) give it a short skill name; 2) write a precise description including the trigger scenario; 3) turn my instruction into numbered steps; 4) point out which pieces should become replaceable variables; 5) add a note telling the model to self-check which step went wrong on failure. My original prompt: {paste the prompt you reuse}",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "skill",
+      "Claude",
+      "工作流",
+      "复用",
+      "进阶",
+      "agent"
+    ],
+    "source": "整理自 Anthropic Agent Skills 文档",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "new-model-eval-set",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "新模型扎堆上线时，先建一份你自己的「测试题集」",
+    "title_en": "When New Models Flood In, Build Your Own Test Set First",
+    "body_zh": "2026 年中 GPT-5.6、Gemini 3.5 Pro、Claude 4.8/Fable 等新模型几乎同时上线，跑分排行天天变。与其追榜单，不如建一份贴合你真实用途的「测试题集」，每次出新模型就用同一批题对比，看谁真的更适合你。让 AI 帮你搭这套评测：请根据我的高频使用场景，生成 8-10 道有代表性的测试题（覆盖我最常做的任务，比如写作改写、长文档总结、写代码、数据整理、中文表达），每题给出「输入、期望产出要点、评分标准（1-5 分）」。再告诉我除了答案质量，还应记录哪些指标（如响应速度、每次成本、出错率），以及怎么用同一套题公平地横评不同模型。我的主要使用场景是：{描述你的日常用途}",
+    "body_en": "By mid-2026, new models like GPT-5.6, Gemini 3.5 Pro, and Claude 4.8/Fable are landing almost at once, and leaderboards shift daily. Instead of chasing rankings, build a test set that matches your real usage, and rerun the same questions on each new model to see which actually fits you. Have the AI help you build it: based on my frequent use cases, generate 8-10 representative test questions (covering what I do most — e.g. rewriting, long-doc summarizing, coding, data wrangling, Chinese phrasing), each with input, key points the ideal answer must hit, and a 1-5 scoring rubric. Then tell me which metrics to log beyond answer quality (latency, cost per task, error rate) and how to compare models fairly with the same set. My main use cases are: {describe your everyday tasks}",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini",
+      "DeepSeek"
+    ],
+    "tags": [
+      "通用技巧",
+      "选型",
+      "评测",
+      "对比",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 新模型发布潮",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "gemini-spark-daily-brief",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "让 AI 主动替你干活：Gemini Spark 与每日简报（Daily Brief）",
+    "title_en": "Let AI Work Proactively For You: Gemini Spark and Daily Brief",
+    "body_zh": "2026 谷歌 I/O 把 Gemini 变成「主动型」助手：Spark 是一个 24/7 在云端运行的 AI 代理，关掉电脑后仍能替你处理任务（如从信用卡账单里揪出隐藏订阅、盯学校邮件的截止日期、把零散会议笔记自动整理成文档和邮件草稿）；Daily Brief 则用你的日历、提醒、行程生成每日早报，按「重复发件人、日程冲突、紧急程度」排好优先级，并给出下一步建议（注：均需 AI Ultra，并授权 Gmail/日历/Drive）。即使你还没开通，也能借鉴这种「主动代理」思路用任何 AI：请扮演我的主动助理，基于我贴出的这一天信息，生成一份「每日简报」——1）按紧急/重要排序今天必须处理的 3-5 件事；2）每件给一句话下一步动作；3）标出有时间冲突或在等我回复的事项；4）末尾列出今天可以忽略的噪音。我这一天的信息是：{粘贴日程/邮件要点/待办}",
+    "body_en": "At Google I/O 2026, Gemini became a proactive assistant: Spark is a 24/7 cloud-based AI agent that keeps handling tasks after you close your laptop (e.g. spotting hidden subscriptions in a credit-card statement, watching school emails for deadlines, turning scattered meeting notes into polished docs and draft emails); Daily Brief builds a morning digest from your calendar, reminders, and travel, prioritized by recurring senders, calendar overlap, and urgency, with suggested next steps (note: both need AI Ultra and Gmail/Calendar/Drive access). Even without it, you can borrow this proactive-agent pattern with any AI: Act as my proactive assistant and turn the day's info I paste below into a Daily Brief — 1) rank the 3-5 must-do items by urgency/importance; 2) give a one-line next action for each; 3) flag anything with a time conflict or awaiting my reply; 4) end with the noise I can safely ignore today. Here is my day: {paste schedule/email highlights/to-dos}",
+    "models": [
+      "Gemini",
+      "GPT",
+      "Claude"
+    ],
+    "tags": [
+      "skill",
+      "Gemini",
+      "agent",
+      "自动化",
+      "效率",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Google I/O Gemini Spark / Daily Brief",
+    "updated": "2026-06-26"
   }
 ];

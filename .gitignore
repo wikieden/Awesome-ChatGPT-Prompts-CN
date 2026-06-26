@@ -1,0 +1,12 @@
+# 每日流水线临时脚本（不纳入版本控制）
+scripts/_backfill.json
+scripts/_newentries.json
+scripts/_apply_backfill.js
+scripts/_append_entries.js
+
+# 本地凭据（绝不提交）
+.gh-credentials
+*.token
+
+# 系统/编辑器
+.DS_Store
