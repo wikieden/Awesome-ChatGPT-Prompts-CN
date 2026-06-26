@@ -4481,5 +4481,95 @@ window.PROMPTS = [
     ],
     "source": "整理自 2026-06 Google I/O Gemini Spark / Daily Brief",
     "updated": "2026-06-26"
+  },
+  {
+    "id": "qwen-agent-errands",
+    "category": "skill",
+    "level": "beginner",
+    "title_zh": "通义千问「办事时代」：让 AI 跑全流程（订票/购物/查路线）",
+    "title_en": "Qwen's \"Get-Things-Done\" Era: Let the AI Run the Whole Errand (Booking / Shopping / Routes)",
+    "body_zh": "2026 年通义千问 App 升级进入「办事时代」，深度接入淘宝、支付宝、高德等生态，能从「查→比→下单/下订」一条龙替你办事，而不只是回答问题。新手怎么用：把需求一次说清，让它先给方案再执行——模板：「帮我办这件事：{要办的事，如『订下周五北京飞上海、下午出发、靠窗、预算800以内的机票』}。请先列出 2-3 个候选方案（含价格、时间、关键差异）让我选，等我确认后再下单；涉及付款的步骤先停下来让我最终确认。」要点：1）给清约束（时间/预算/偏好/数量）；2）要求「先方案后执行」，别让它直接付钱；3）一次只办一件，复杂需求拆开说。这样既省事又可控。",
+    "body_en": "In 2026 the Qwen (Tongyi Qianwen) app moved into a \"get-things-done\" era, deeply integrated with Taobao, Alipay, and Amap so it can run an errand end-to-end — search → compare → order/book — instead of only answering. How beginners use it: state the request fully and have it propose before acting. Template: \"Handle this for me: {the task, e.g. 'book a Beijing→Shanghai flight next Friday, afternoon departure, window seat, under 800 RMB'}. First list 2-3 candidate options (price, time, key differences) for me to choose; only order after I confirm; pause before any payment step for my final OK.\" Keys: 1) give clear constraints (time/budget/preferences/quantity); 2) demand \"options first, then execute\" — never let it pay outright; 3) do one errand at a time, split complex needs. Convenient and still under your control.",
+    "models": [
+      "通义"
+    ],
+    "tags": [
+      "skill",
+      "通义",
+      "agent",
+      "办事",
+      "新手",
+      "自动化"
+    ],
+    "source": "整理自 2026-06 通义千问 App「办事时代」升级",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "wenxin-chinese-official-writing",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "文心一言写中文公文/新闻稿：把它当「中文语感最强」的笔杆子",
+    "title_en": "Use Ernie (Wenxin) for Chinese Official Documents & Press Releases: Your Best-at-Chinese Ghostwriter",
+    "body_zh": "文心一言（百度）的强项是中文语感和表达习惯，写公文、通知、新闻稿、致辞、述职、中文润色尤其顺。要让它写得「像人写的、合规范」，别只说「帮我写个通知」，按这个结构提：1）文种与场景（如『部门内部通知 / 对外新闻稿 / 领导讲话稿』）；2）核心信息（时间、地点、事项、要求，逐条列出）；3）对象与语气（面向谁、正式/亲和程度）；4）格式要求（标题、称谓、落款、字数、是否分条）；5）禁忌（不夸大、不用网络语、避免某些表述）。模板：「请写一份【文种】，面向【对象】，语气【正式/亲和】，需包含以下要点：{逐条列要点}。格式按【要求】，字数约【N】字。写完再给我一个更简洁的版本备选。」拿到初稿后让它「逐段说明为什么这么写」，方便你改。",
+    "body_en": "Ernie (Baidu Wenxin) shines at Chinese phrasing and conventions — official notices, press releases, speeches, work reports, and Chinese polishing read especially naturally. To get something that sounds human and follows norms, don't just say \"write a notice\"; structure it: 1) document type & scenario (internal notice / external press release / leader's speech); 2) core info (time, place, matter, requirements, itemized); 3) audience & tone (for whom, how formal/warm); 4) format (title, salutation, sign-off, length, whether to itemize); 5) don'ts (no exaggeration, no internet slang, avoid certain phrasings). Template: \"Write a [type] for [audience] in a [formal/warm] tone, covering: {itemized points}. Follow [format], about [N] characters. Then give a more concise alternative version.\" After the draft, ask it to explain each paragraph's choice so you can edit.",
+    "models": [
+      "文心"
+    ],
+    "tags": [
+      "通用技巧",
+      "文心",
+      "公文",
+      "写作",
+      "中文",
+      "新手"
+    ],
+    "source": "整理自 2026-06 文心一言 4.5 Turbo / X1 Turbo 能力",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "doubao-multimodal-voice",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "豆包的隐藏用法：拍张照就能问、动嘴就能聊（多模态 + 语音）",
+    "title_en": "Doubao's Underused Tricks: Snap a Photo to Ask, Talk to Chat (Multimodal + Voice)",
+    "body_zh": "字节豆包在「随手问、语音聊」上体验很顺，还接入了多模态推理（Seed1.5-VL），不只是打字。新手最实用的三种玩法：1）拍照问——遇到不懂的实物/菜单/说明书/数学题/路牌，直接拍照发给它问「这是什么 / 怎么用 / 帮我翻译 / 这道题怎么解」；2）语音陪练——开语音对话练口语、模拟面试、练演讲，让它「扮演面试官，每次只问一个问题，我答完你点评再问下一个」；3）边走边用——通勤时用语音让它读新闻、总结文章、记待办。试试这条开场：「我用语音和你聊，请扮演我的英语口语陪练，话题是日常出行，你先用简单英语问我一个问题，我答错就温和纠正。」把豆包当一个能看会听的助手，而不只是聊天框。",
+    "body_en": "ByteDance's Doubao feels smooth for quick questions and voice chat, and it now does multimodal reasoning (Seed1.5-VL) — not just typing. Three handy beginner uses: 1) Photo questions — snap an object/menu/manual/math problem/street sign and ask \"what is this / how do I use it / translate this / how do I solve this\"; 2) Voice practice — rehearse speaking, mock interviews, or speeches: \"act as my interviewer, ask one question at a time, critique my answer, then ask the next\"; 3) On the go — have it read news, summarize articles, or capture to-dos by voice during your commute. Try this opener: \"Let's talk by voice; be my spoken-English coach on everyday travel. Ask me one question in simple English first, and gently correct me if I'm wrong.\" Treat Doubao as an assistant that can see and hear, not just a chat box.",
+    "models": [
+      "豆包"
+    ],
+    "tags": [
+      "新手",
+      "豆包",
+      "多模态",
+      "语音",
+      "拍照",
+      "入门"
+    ],
+    "source": "整理自 2026-06 豆包 Seed1.5-VL 多模态能力",
+    "updated": "2026-06-26"
+  },
+  {
+    "id": "craft-confirm-before-agent-acts",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "让 AI 代理「先复述确认、再动手」：用智能体办事的安全习惯",
+    "title_en": "Make AI Agents \"Confirm First, Act Second\": A Safety Habit for Agentic Tasks",
+    "body_zh": "2026 年越来越多 AI 能「真的替你办事」（通义办事、Gemini Spark、各种 Agent 插件），方便的同时也更容易办错——下错单、发错邮件、改错文件。养成一个习惯就能避坑：让它「先复述+列计划+停下来等确认，再执行」。通用前缀，贴在任何让 AI 执行操作的指令前面：「在你真正执行任何会产生后果的操作（下单、付款、发送、删除、修改文件、对外发布）之前，先做三件事：1）用一句话复述你理解的我的目标；2）列出你打算执行的具体步骤和将影响的对象；3）停下来等我回复『确认』后再做。如果信息不全，先问我，不要替我猜关键信息（金额、收件人、数量、日期）。」这条习惯对所有带「执行能力」的 AI 都适用，能把大多数低级事故挡在执行之前。",
+    "body_en": "In 2026 more and more AIs can actually do things for you (Qwen errands, Gemini Spark, various agent plugins) — convenient, but easier to get wrong: wrong order, wrong email, wrong file edit. One habit prevents most mishaps: make it \"restate + plan + pause for confirmation, then execute.\" A universal prefix to paste before any instruction that lets an AI take action: \"Before you actually perform anything with consequences (ordering, paying, sending, deleting, editing files, publishing), do three things first: 1) restate my goal in one sentence; 2) list the concrete steps you'll take and what they'll affect; 3) stop and wait for me to reply 'confirm' before doing it. If anything is unclear, ask me — don't guess key details (amount, recipient, quantity, date).\" This works for any AI with execution power and blocks most avoidable accidents before they happen.",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini",
+      "通义"
+    ],
+    "tags": [
+      "通用技巧",
+      "agent",
+      "安全",
+      "确认",
+      "新手"
+    ],
+    "source": "原创（呼应 2026 智能体办事趋势）",
+    "updated": "2026-06-26"
   }
 ];

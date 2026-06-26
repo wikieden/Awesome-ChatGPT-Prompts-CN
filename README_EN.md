@@ -11,12 +11,12 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 ### Categories
 
-- 🚀 **Getting Started** (10)
+- 🚀 **Getting Started** (11)
 - 🎭 **Role Prompts** (149)
 - 🖼️ **Text-to-Image** (10)
 - 🎬 **Text-to-Video** (15)
-- 🧩 **Skills** (11)
-- 💡 **Prompt Craft** (31)
+- 🧩 **Skills** (12)
+- 💡 **Prompt Craft** (33)
 
 ## 🚀 Getting Started
 
@@ -69,6 +69,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟢 Beginner ｜ DeepSeek · 豆包 · 通义 · 智谱`  ·  整理自 2026-06 模型动态
 
 > After the June 2026 round of updates, China's major models have essentially entered the 'hybrid reasoning' era (one model with both a fast-answer mode and a deep-thinking mode). As a beginner, don't agonize over version numbers — pick by task: coding, bug-fixing, data work — choose DeepSeek (the V3.1 generation is strong at code and reasoning, with cheap API pricing); pure Chinese writing, official documents, copywriting, naming — choose ERNIE / Wenxin (steadiest Chinese feel); fastest chat, tight phone / Douyin ecosystem, quick everyday questions — choose Doubao (low first-token latency, snappy); knowledge Q&A, math, long-document analysis — choose Qwen / Tongyi (leads on knowledge and math benchmarks); multimodal needs (reading images, charts, screenshot Q&A) — choose Zhipu GLM (the GLM-4.5V generation does multimodal hybrid reasoning). Practical tip: take one real task of yours (e.g. 'turn these meeting notes into 5 to-dos'), run it on two or three of them using free quota, and see whose output you edit the least — that's your daily driver for now. Don't worship leaderboards; fit to your own work matters most.
+
+### Doubao's Underused Tricks: Snap a Photo to Ask, Talk to Chat (Multimodal + Voice)
+`🟢 Beginner ｜ 豆包`  ·  整理自 2026-06 豆包 Seed1.5-VL 多模态能力
+
+> ByteDance's Doubao feels smooth for quick questions and voice chat, and it now does multimodal reasoning (Seed1.5-VL) — not just typing. Three handy beginner uses: 1) Photo questions — snap an object/menu/manual/math problem/street sign and ask "what is this / how do I use it / translate this / how do I solve this"; 2) Voice practice — rehearse speaking, mock interviews, or speeches: "act as my interviewer, ask one question at a time, critique my answer, then ask the next"; 3) On the go — have it read news, summarize articles, or capture to-dos by voice during your commute. Try this opener: "Let's talk by voice; be my spoken-English coach on everyday travel. Ask me one question in simple English first, and gently correct me if I'm wrong." Treat Doubao as an assistant that can see and hear, not just a chat box.
 
 ## 🎭 Role Prompts
 
@@ -1019,6 +1024,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 > At Google I/O 2026, Gemini became a proactive assistant: Spark is a 24/7 cloud-based AI agent that keeps handling tasks after you close your laptop (e.g. spotting hidden subscriptions in a credit-card statement, watching school emails for deadlines, turning scattered meeting notes into polished docs and draft emails); Daily Brief builds a morning digest from your calendar, reminders, and travel, prioritized by recurring senders, calendar overlap, and urgency, with suggested next steps (note: both need AI Ultra and Gmail/Calendar/Drive access). Even without it, you can borrow this proactive-agent pattern with any AI: Act as my proactive assistant and turn the day's info I paste below into a Daily Brief — 1) rank the 3-5 must-do items by urgency/importance; 2) give a one-line next action for each; 3) flag anything with a time conflict or awaiting my reply; 4) end with the noise I can safely ignore today. Here is my day: {paste schedule/email highlights/to-dos}
 
+### Qwen's "Get-Things-Done" Era: Let the AI Run the Whole Errand (Booking / Shopping / Routes)
+`🟢 Beginner ｜ 通义`  ·  整理自 2026-06 通义千问 App「办事时代」升级
+
+> In 2026 the Qwen (Tongyi Qianwen) app moved into a "get-things-done" era, deeply integrated with Taobao, Alipay, and Amap so it can run an errand end-to-end — search → compare → order/book — instead of only answering. How beginners use it: state the request fully and have it propose before acting. Template: "Handle this for me: {the task, e.g. 'book a Beijing→Shanghai flight next Friday, afternoon departure, window seat, under 800 RMB'}. First list 2-3 candidate options (price, time, key differences) for me to choose; only order after I confirm; pause before any payment step for my final OK." Keys: 1) give clear constraints (time/budget/preferences/quantity); 2) demand "options first, then execute" — never let it pay outright; 3) do one errand at a time, split complex needs. Convenient and still under your control.
+
 ## 💡 Prompt Craft
 
 ### Tip: show examples, don't just describe
@@ -1201,5 +1211,15 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟡 Intermediate ｜ GPT · Claude · Gemini · DeepSeek`  ·  整理自 2026-06 新模型发布潮
 
 > By mid-2026, new models like GPT-5.6, Gemini 3.5 Pro, and Claude 4.8/Fable are landing almost at once, and leaderboards shift daily. Instead of chasing rankings, build a test set that matches your real usage, and rerun the same questions on each new model to see which actually fits you. Have the AI help you build it: based on my frequent use cases, generate 8-10 representative test questions (covering what I do most — e.g. rewriting, long-doc summarizing, coding, data wrangling, Chinese phrasing), each with input, key points the ideal answer must hit, and a 1-5 scoring rubric. Then tell me which metrics to log beyond answer quality (latency, cost per task, error rate) and how to compare models fairly with the same set. My main use cases are: {describe your everyday tasks}
+
+### Use Ernie (Wenxin) for Chinese Official Documents & Press Releases: Your Best-at-Chinese Ghostwriter
+`🟢 Beginner ｜ 文心`  ·  整理自 2026-06 文心一言 4.5 Turbo / X1 Turbo 能力
+
+> Ernie (Baidu Wenxin) shines at Chinese phrasing and conventions — official notices, press releases, speeches, work reports, and Chinese polishing read especially naturally. To get something that sounds human and follows norms, don't just say "write a notice"; structure it: 1) document type & scenario (internal notice / external press release / leader's speech); 2) core info (time, place, matter, requirements, itemized); 3) audience & tone (for whom, how formal/warm); 4) format (title, salutation, sign-off, length, whether to itemize); 5) don'ts (no exaggeration, no internet slang, avoid certain phrasings). Template: "Write a [type] for [audience] in a [formal/warm] tone, covering: {itemized points}. Follow [format], about [N] characters. Then give a more concise alternative version." After the draft, ask it to explain each paragraph's choice so you can edit.
+
+### Make AI Agents "Confirm First, Act Second": A Safety Habit for Agentic Tasks
+`🟢 Beginner ｜ GPT · Claude · Gemini · 通义`  ·  原创（呼应 2026 智能体办事趋势）
+
+> In 2026 more and more AIs can actually do things for you (Qwen errands, Gemini Spark, various agent plugins) — convenient, but easier to get wrong: wrong order, wrong email, wrong file edit. One habit prevents most mishaps: make it "restate + plan + pause for confirmation, then execute." A universal prefix to paste before any instruction that lets an AI take action: "Before you actually perform anything with consequences (ordering, paying, sending, deleting, editing files, publishing), do three things first: 1) restate my goal in one sentence; 2) list the concrete steps you'll take and what they'll affect; 3) stop and wait for me to reply 'confirm' before doing it. If anything is unclear, ask me — don't guess key details (amount, recipient, quantity, date)." This works for any AI with execution power and blocks most avoidable accidents before they happen.
 
 <!-- AUTO-PROMPTS:END -->
