@@ -1,4 +1,7 @@
 # ChatGPT调教指南-咒语指南-聊天提示词指南
+
+> 🌐 **在线版（搜索 · 一键复制 · ⭐）：** https://wikieden.github.io/Awesome-ChatGPT-Prompts-CN/ ｜ 🇬🇧 English: [README_EN.md](README_EN.md)
+
 ## 解除封印咒语
 
 #### 如果你想将你的 **ChatGPT** 调教成一只猫娘，最新的教程在 [ChatGPT入门指南](ChatGpt-receipt.md)
