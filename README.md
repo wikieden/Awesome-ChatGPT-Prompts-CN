@@ -1,6 +1,8 @@
 # ChatGPT调教指南-咒语指南-聊天提示词指南
 
 > 🌐 **在线版（搜索 · 一键复制 · ⭐）：** https://wikieden.github.io/Awesome-ChatGPT-Prompts-CN/ ｜ 🇬🇧 English: [README_EN.md](README_EN.md)
+>
+> 📱 **新手必看：[美区账号注册与订阅指南](docs/账号注册与订阅指南.md)** —— 美区 App Store 建号、Claude / OpenAI Codex 注册激活、用 Apple 礼品卡付费
 
 ## 解除封印咒语
 
