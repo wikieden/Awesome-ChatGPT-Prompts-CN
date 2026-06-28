@@ -9,6 +9,8 @@
 
 1. 如果遇到所在国家不支持服务（County not supported）请用机场全局翻墙，中间电话短信验证用虚拟号码，[虚拟号码服务商sms-activate](https://sms-activate.org/?ref=3712886) 
 
+   > 🪜 **推荐机场 SSONE**（稳定直连 ChatGPT / Claude / Gemini，支持 4K 流媒体）：[点此注册](https://sky.ssonenetwork.com/register?aff=NLEVymB2) ｜ 备用网址导航：[hello36d](https://hello36d.com/register?aff=NLEVymB2)
+
 ## 它能干什么? 直接问它
 
 > 我是一个训练有素的大型语言模型，可以帮助你回答各种问题，比如关于政治、历史、科学、技术、艺术等方面的问题。我可以帮助你理解一些概念，并为你提供有价值的信息和见解。你可以尝试提出一些问题，看看我能不能帮到你。
