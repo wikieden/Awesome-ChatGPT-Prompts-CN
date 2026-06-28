@@ -4571,5 +4571,223 @@ window.PROMPTS = [
     ],
     "source": "原创（呼应 2026 智能体办事趋势）",
     "updated": "2026-06-26"
+  },
+  {
+    "id": "gemini-app-daily-brief-spark",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "Gemini App 2026 新玩法：每日简报 + 个人智能体 Spark，把它当「会主动帮你的助理」",
+    "title_en": "New in the Gemini App (2026): Daily Brief + Spark Agent — Treat It as a Proactive Assistant",
+    "body_zh": "2026 年 Google 给 Gemini App 加了一批面向普通人的新功能，新手最值得上手三个：1）每日简报（Daily Brief）——让它每天早上把你的日程、邮件要点、关注的新闻汇成一段话，开口就说「给我一份今天的每日简报，按『今日日程 / 待回复 / 值得看的新闻』三块，控制在 200 字」；2）个人智能体 Spark——能跨步骤替你办事（查信息、整理、起草），用前一定让它「先复述目标+列步骤+等我确认再执行」；3）Gemini Omni 视频——可以直接生成短视频做演示/草稿。给新手的提示：把指令写清楚「要什么、给谁、多长、什么风格」，越具体结果越稳。试试：「用每日简报的形式总结这周我收到的 5 封重要邮件，每封一句话+建议怎么回。」",
+    "body_en": "In 2026 Google added a wave of consumer-friendly features to the Gemini app. Three worth trying first: 1) Daily Brief — have it bundle your schedule, key emails, and news into one morning summary: \"Give me today's Daily Brief in three blocks — Today's Schedule / Needs a Reply / Worth Reading — under 200 words\"; 2) Spark, a personal agent that handles multi-step tasks (look things up, organize, draft) — before using it, make it \"restate the goal, list steps, and wait for my confirmation before acting\"; 3) Gemini Omni video, which generates short clips for demos or drafts. Beginner tip: spell out what you want, for whom, how long, and what style — the more specific, the more reliable. Try: \"Summarize the 5 important emails I got this week as a Daily Brief, one line each plus a suggested reply.\"",
+    "models": [
+      "Gemini"
+    ],
+    "tags": [
+      "新手",
+      "Gemini",
+      "智能体",
+      "每日简报",
+      "入门"
+    ],
+    "source": "整理自 2026-05 Google I/O Gemini App 更新（Daily Brief / Spark / Omni）",
+    "updated": "2026-06-27"
+  },
+  {
+    "id": "gpt56-long-context-workflow",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "超长上下文怎么用才不浪费：GPT-5.6 / DeepSeek 百万 token 的正确姿势",
+    "title_en": "How to Actually Use Ultra-Long Context: Working with Million-Token Windows (GPT-5.6 / DeepSeek)",
+    "body_zh": "2026 年主流模型上下文越拉越长（GPT-5.6 约 150 万 token，DeepSeek、通义也都到百万级）。但「能塞进去」不等于「用得好」——一次性丢一大堆资料，模型容易抓不住重点、漏掉中间内容（即「中间遗忘」）。三个实用习惯：1）先给任务、再给资料——开头一句话说清「我要你基于下面所有材料做什么」，再贴正文，最后重申要求，重点信息别只放在中间；2）让它先建索引——「先用 1 句话各自概括这 8 份文档，列出文档编号和主题，等我指定再深入」；3）要求引用出处——「回答时标注信息来自第几份文档/第几段」，方便你核对、也逼它真的读了。适合：审合同、读多篇论文、整理聊天记录、跨多文件改代码。一句模板：「以下是【N】份资料。任务是【X】。先列每份的一句话摘要，再综合回答，并在每个结论后标注来源编号。」",
+    "body_en": "In 2026 context windows keep growing (GPT-5.6 ~1.5M tokens; DeepSeek and Qwen also hit the million range). But \"it fits\" doesn't mean \"it works\" — dump a huge pile at once and the model loses the thread or skips middle content (the \"lost in the middle\" problem). Three practical habits: 1) Task first, then material — open with one line stating \"what I want you to do with everything below,\" then paste the content, then restate the ask; don't bury key info in the middle; 2) Make it index first — \"Summarize each of these 8 documents in one sentence with its number and topic, then wait for me to pick which to dig into\"; 3) Require citations — \"When you answer, cite which document/paragraph each fact came from,\" which helps you verify and forces it to actually read. Great for: contract review, reading many papers, sorting chat logs, editing code across files. Template: \"Below are [N] sources. The task is [X]. First list a one-sentence summary of each, then answer, citing the source number after each conclusion.\"",
+    "models": [
+      "GPT",
+      "DeepSeek",
+      "通义",
+      "Gemini"
+    ],
+    "tags": [
+      "通用技巧",
+      "长上下文",
+      "GPT",
+      "DeepSeek",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 GPT-5.6 / DeepSeek 百万级上下文能力",
+    "updated": "2026-06-27"
+  },
+  {
+    "id": "mj-v81-draft-mode-hd",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Midjourney V8.1 提速版用法：草稿模式狂试图，定稿再开 HD + Omni 保一致",
+    "title_en": "Midjourney V8.1 Workflow: Iterate Fast in Draft Mode, Then Lock In with HD + Omni Reference",
+    "body_zh": "Midjourney V8.1 已于 2026-06-10 成为默认版本，比早期快 4–5 倍。聪明的出图流程分两步：1）草稿模式（Draft Mode）狂试——成本约 1/10、速度约 5 倍，专门用来快速试构图、试风格、做情绪板，别追求清晰度，先把方向定下来；2）定稿再升级——方向满意后去掉草稿、加 `--hd`（或设置里开 HD）出 2K 高清，不用再单独 upscale。两个常用增强：`--sref` 锁风格、Omni Reference 锁住同一个角色/物体在不同场景的一致性（做系列图、绘本、品牌素材必备）。提示词建议先用中文把想法讲给 ChatGPT/Claude，让它翻成带镜头/光线/构图术语的英文（MJ 英文出图最稳）。模板：「[主体] + [动作/场景] + [风格/参考] + [光线，如 golden hour] + [构图/镜头] --ar 16:9 --hd」。",
+    "body_en": "Midjourney V8.1 became the default on 2026-06-10 and runs about 4–5x faster than earlier versions. A smart workflow has two stages: 1) Iterate in Draft Mode — roughly 1/10 the cost and ~5x the speed, perfect for quickly testing composition, style, and moodboards; don't chase sharpness, just nail the direction; 2) Finalize with quality — once you're happy, drop draft and add `--hd` (or enable HD in settings) for 2K output with no separate upscale needed. Two handy boosters: `--sref` to lock a style, and Omni Reference to keep the same character/object consistent across scenes (essential for series, picture books, brand assets). For prompts, describe your idea in Chinese to ChatGPT/Claude first and have it translated into English with lens/lighting/composition terms (MJ is most reliable in English). Template: \"[subject] + [action/scene] + [style/reference] + [lighting, e.g. golden hour] + [composition/lens] --ar 16:9 --hd\".",
+    "models": [
+      "Midjourney"
+    ],
+    "tags": [
+      "文生图",
+      "Midjourney",
+      "草稿模式",
+      "一致性",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Midjourney V8.1（Draft Mode / HD / Omni Reference）",
+    "updated": "2026-06-27"
+  },
+  {
+    "id": "kling-veo-video-structure",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "AI 视频提示词的万能结构：主体+动作+镜头+光线，可灵/Veo/Sora 通用",
+    "title_en": "A Universal Structure for AI Video Prompts: Subject + Action + Camera + Light (Kling / Veo / Sora)",
+    "body_zh": "文生视频最容易翻车的点，是只写「一个女孩在走路」——模型不知道镜头怎么动、画面什么节奏，结果飘忽。不管用可灵、Veo 还是 Sora，套一个稳定结构就好很多：1）主体——是谁/是什么，外观细节；2）动作——在做什么，动作的先后；3）镜头——景别和运镜（如『中景，缓慢推近』『航拍俯视，向右平移』）；4）光线与氛围（如『黄昏暖光，电影感』）；5）时长与节奏（如『5 秒，一镜到底，慢动作』）。一句模板：「[主体，含外观] 正在 [动作]；镜头：[景别+运镜]；光线：[氛围]；[时长/节奏]」。两个实战经验：动作一次别写太多，一个镜头讲清一件事；想要连贯系列就固定主体描述和风格词。出图类工具（如 Midjourney 视频）成本高、效果一般时，优先用可灵/Veo 做视频。",
+    "body_en": "The most common way text-to-video fails is writing just \"a girl walking\" — the model doesn't know how the camera moves or the pacing, so it drifts. Whether you use Kling, Veo, or Sora, a stable structure helps a lot: 1) Subject — who/what, with appearance details; 2) Action — what they do, in what order; 3) Camera — shot size and movement (e.g. \"medium shot, slow push-in\"; \"aerial top-down, pan right\"); 4) Light & mood (e.g. \"warm dusk light, cinematic\"); 5) Duration & pacing (e.g. \"5s, single take, slow motion\"). Template: \"[subject with appearance] is [action]; camera: [shot + movement]; light: [mood]; [duration/pacing].\" Two field tips: don't cram many actions into one shot — one shot, one idea; for a consistent series, keep the subject description and style words fixed. When image-first tools (e.g. Midjourney video) are costly or underwhelming, prefer Kling/Veo for video.",
+    "models": [
+      "可灵 Kling",
+      "Veo",
+      "Sora",
+      "即梦"
+    ],
+    "tags": [
+      "文生视频",
+      "可灵",
+      "Veo",
+      "Sora",
+      "运镜",
+      "进阶"
+    ],
+    "source": "整理自 2026 AI 视频提示词实践（Kling / Veo / Sora 运镜结构）",
+    "updated": "2026-06-27"
+  },
+  {
+    "id": "claude-skill-research-plan-execute",
+    "category": "skill",
+    "level": "advanced",
+    "title_zh": "让 Agent 干活更靠谱的工作流：先研究→再计划→后执行→自检（含 Skill 选型）",
+    "title_en": "A Reliable Agent Workflow: Research → Plan → Execute → Review (and When to Use a Skill)",
+    "body_zh": "用 Claude Code / 各类 Agent 做复杂任务，最大的坑是「上来就动手」，结果解决了错的问题。2026 年成熟团队的共识是一条固定流水线：研究 → 计划 → 执行 → 复查 → 交付。落地做法：1）先研究再写——让它先读相关文件/资料、用一段话说清现状和约束，别急着出代码；2）计划单独成步——先出计划等你确认（很多工具有 plan mode），把探索和执行分开；3）要证据不要口头「我搞定了」——让它贴出测试输出、运行的命令和返回、或截图，「拿证据自检比你重新跑一遍快」；4）复查用新对话——换个干净上下文来 review，避免它偏袒自己刚写的代码。Skill 选型口诀：只是提示词模板 → 用 slash command；有真正的领域逻辑或要带脚本/资料文件 → 写成 Skill；要隔离、并行的独立子任务 → 用 subagent。再补一条：全局规矩（如「绝不提交 .env」）放进 CLAUDE.md，每次都加载；领域专用流程放进 Skill，用到才触发。",
+    "body_en": "The biggest trap when running Claude Code or other agents on complex tasks is jumping straight to doing — and solving the wrong problem. In 2026 mature teams converge on one pipeline: Research → Plan → Execute → Review → Ship. How to apply it: 1) Research before writing — have it read the relevant files/material and state the current situation and constraints in a paragraph before producing code; 2) Make planning its own step — get a plan and confirm it first (many tools have a plan mode), separating exploration from execution; 3) Demand evidence, not \"it's done\" — have it paste test output, the command it ran and what it returned, or a screenshot; reviewing evidence is faster than re-running it yourself; 4) Review in a fresh chat — a clean context avoids bias toward code it just wrote. Skill selection rule of thumb: just a prompt template → use a slash command; real domain logic or bundled scripts/files → write a Skill; isolated, parallel sub-work → use a subagent. One more: put global rules (e.g. \"never commit .env\") in CLAUDE.md so they load every time; put domain-specific workflows in Skills that trigger only when needed.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Skill",
+      "Claude",
+      "agent",
+      "工作流",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 Claude Code 最佳实践与 Skill 设计指南",
+    "updated": "2026-06-27"
+  },
+  {
+    "id": "gpt56-codex-agentic-coding",
+    "category": "craft",
+    "level": "advanced",
+    "title_zh": "GPT-5.6 + Codex：把「写代码」当成派活给智能体",
+    "title_en": "GPT-5.6 + Codex: Treat Coding as Delegating to an Agent",
+    "body_zh": "2026 年 6 月底，OpenAI 的 GPT-5.6 已在 Codex 后端灰度放量（业内叫 canary 金丝雀测试），主打更强的「智能体式写代码」——不是让它一行行补全，而是把一个完整任务交给它自己规划、改文件、跑测试、再迭代。用好它的关键不在提示词华丽，而在于把任务说清并留下验证手段：1）给目标不给步骤——说清「要实现什么、约束是什么、怎样算完成」，别替它写流程；2）先让它复述计划再动手，确认方向对了再放它跑；3）一定要有自动验证——让它跑测试/类型检查/lint，并把输出贴回来，「能自检的智能体才敢托付」；4）小步提交，每完成一个可测的小目标就停下让你 review，避免它一口气改乱整个仓库。一句话上手：「目标是 X，约束是 Y，先给我计划；确认后请实现并用现有测试自检，每过一个测试停下汇报。」",
+    "body_en": "By late June 2026, OpenAI's GPT-5.6 is rolling out gradually inside the Codex backend (canary testing), with a focus on stronger agentic coding — not line-by-line autocomplete, but handing it a whole task to plan, edit files, run tests, and iterate on its own. Getting the most out of it is less about fancy prompts and more about stating the task clearly and leaving it a way to verify: 1) Give the goal, not the steps — spell out what to build, the constraints, and what 'done' means, instead of scripting its process; 2) Have it restate the plan before acting, confirm the direction, then let it run; 3) Always wire in automatic verification — make it run tests/type checks/lint and paste the output back; an agent that can check itself is one you can trust; 4) Commit in small steps — after each testable milestone, have it stop for your review so it can't scramble the whole repo in one shot. Quick start: 'The goal is X with constraints Y. Give me a plan first; once I confirm, implement it and self-check against the existing tests, pausing to report after each test passes.'",
+    "models": [
+      "GPT"
+    ],
+    "tags": [
+      "GPT",
+      "Codex",
+      "写代码",
+      "智能体",
+      "进阶"
+    ],
+    "source": "整理自 2026-06 OpenAI GPT-5.6 / Codex 灰度测试报道与智能体编码实践",
+    "updated": "2026-06-28"
+  },
+  {
+    "id": "gemini-35-pro-deep-think",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Gemini 3.5 Pro「深度思考(Deep Think)」+ 超长上下文：什么时候该开",
+    "title_en": "Gemini 3.5 Pro Deep Think + Long Context: When to Turn It On",
+    "body_zh": "Google 在 2026 年 I/O 上发布 Gemini 3.5 Pro，6 月起逐步开放，两个卖点对日常最有用：可选的「深度思考(Deep Think)」推理模式，和接近 200 万 token 的超长上下文。但它们不是越用越好，得分场景开：1）需要深度思考的：多步数学/逻辑、需要权衡取舍的方案设计、复杂代码调试、读完一堆资料再下结论——这类才值得开 Deep Think，换来更慢但更稳的答案；2）简单问答、改错别字、写一段文案——别开，开了又慢又费额度；3）超长上下文的正确用法：把整本手册、整个代码库、几十页合同一次性丢进去做「跨文档问答」，让它对照前后内容，而不是分段喂；4）提示词里直接点名要它「先想清楚再回答，分步推理」，并要求「给出依据和不确定的地方」。一句话口诀：难题开深度思考，长资料用大上下文，琐事都关掉。",
+    "body_en": "Google unveiled Gemini 3.5 Pro at I/O 2026, rolling out from June, and two features matter most day to day: an optional Deep Think reasoning mode and a context window approaching 2 million tokens. Neither is 'always better' — switch them on by scenario: 1) Worth Deep Think: multi-step math/logic, design decisions with real trade-offs, gnarly code debugging, or drawing conclusions after reading a pile of material — these earn the slower-but-steadier answer; 2) Don't bother for simple Q&A, fixing typos, or drafting a line of copy — it just gets slower and burns quota; 3) Use the long context right: drop a whole manual, an entire codebase, or a 50-page contract in at once for cross-document Q&A, letting it reconcile passages, rather than feeding it in fragments; 4) In the prompt, explicitly ask it to 'think it through before answering, reasoning step by step' and to 'state its evidence and where it's unsure.' Rule of thumb: Deep Think for hard problems, big context for long material, both off for trivial tasks.",
+    "models": [
+      "Gemini"
+    ],
+    "tags": [
+      "Gemini",
+      "深度思考",
+      "长上下文",
+      "推理",
+      "进阶"
+    ],
+    "source": "整理自 2026 Google I/O Gemini 3.5 Pro 发布与 Deep Think / 长上下文用法",
+    "updated": "2026-06-28"
+  },
+  {
+    "id": "sora2-native-audio-dialogue",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "Sora 2 原生音画同步：一句提示词出带对白和环境音的镜头",
+    "title_en": "Sora 2 Native Audio: One Prompt for a Shot with Dialogue and Ambient Sound",
+    "body_zh": "Sora 2 最大的升级是「原生音画同步」——不再是先出无声画面再配音，而是一次生成就带对白、环境音和音效，口型和声音对得上。想用好它，提示词要把「声音」也写进去：1）画面之外，明确写出有谁说话、说什么台词（用引号括起来），语气如何；2）写清环境音，比如「雨打窗户的声音、远处车流、室内回声」；3）写清关键音效出现的时机，比如「门在第 3 秒被推开并发出吱呀声」；4）镜头时长控制在约 20 秒内、1080p，越短越容易稳；5）想要旁白/独白就直接说「画外音念出：……」。模板：「[场景与光线]。镜头：[运镜]。角色 A（[语气]）说：『[台词]』。环境音：[环境音]。音效：[时机+音效]。时长 8 秒，1080p。」先用短镜头验证音画对齐，再加长。",
+    "body_en": "Sora 2's headline upgrade is native audio-visual sync — instead of generating silent footage and dubbing it later, a single generation comes with dialogue, ambient sound, and effects, with lips matching the voice. To use it well, write the sound into the prompt too: 1) Beyond the visuals, state who speaks, their exact lines (in quotes), and the tone; 2) Spell out ambient sound, e.g. 'rain on the window, distant traffic, indoor echo'; 3) Note the timing of key effects, e.g. 'the door is pushed open at second 3 with a creak'; 4) Keep shots around 20s at 1080p — shorter is steadier; 5) For narration/monologue, just say 'voice-over reads: ...'. Template: '[scene and lighting]. Camera: [movement]. Character A ([tone]) says: \"[line]\". Ambient: [ambient sound]. SFX: [timing + effect]. 8 seconds, 1080p.' Validate audio sync on a short shot first, then extend.",
+    "models": [
+      "Sora"
+    ],
+    "tags": [
+      "Sora",
+      "文生视频",
+      "音画同步",
+      "对白",
+      "进阶"
+    ],
+    "source": "整理自 2026 OpenAI Sora 2 发布与原生音频/对白同步用法",
+    "updated": "2026-06-28"
+  },
+  {
+    "id": "kling3-multiimage-3d-trajectory",
+    "category": "video",
+    "level": "advanced",
+    "title_zh": "可灵 3.0 多图参考 + 3D 运镜轨迹：把分镜「钉死」再生成",
+    "title_en": "Kling 3.0 Multi-Image Reference + 3D Camera Trajectory: Lock the Shot, Then Generate",
+    "body_zh": "可灵 3.0 在 2026 年初登顶多个全球视频榜单，对创作者最实用的是两件武器：多图参考和 3D 运镜轨迹控制，目标是把「碰运气出片」变成「先定好再生成」。用法：1）多图参考——同时上传角色定妆图、场景图、道具图，让它在多镜头里保持人物长相、服装、场景一致，解决「换个镜头脸就变了」的老问题；2）3D 运镜轨迹——不再只写「推近/拉远」，而是指定相机的空间路径（比如绕主体半圈再升高俯拍），运镜更可控、更像真实摄影机；3）配合「分镜编排/视频续写」功能做多分钟连续叙事，先把每个镜头的参考图和运镜钉死，再串起来。落地建议：先用单镜头确认人物一致性和运镜路径，满意后再批量生成并续写，避免一次性长片翻车。",
+    "body_en": "Kling 3.0 topped several global video leaderboards in early 2026, and its two most practical weapons for creators are multi-image reference and 3D camera-trajectory control — turning 'roll the dice and hope' into 'lock it in, then generate.' How to use them: 1) Multi-image reference — upload character reference shots, scene plates, and prop images together so it keeps faces, wardrobe, and sets consistent across shots, fixing the classic 'the face changes every cut' problem; 2) 3D camera trajectory — instead of just 'push in / pull out,' specify the camera's path through space (e.g. orbit the subject halfway, then rise into a high-angle), for far more controllable, camera-like moves; 3) Pair it with the shot-arrangement / video-continuation features for multi-minute continuous storytelling — lock each shot's reference images and camera move first, then chain them. Practical tip: validate character consistency and the camera path on a single shot first, then batch-generate and continue, so a long piece doesn't fall apart all at once.",
+    "models": [
+      "可灵"
+    ],
+    "tags": [
+      "可灵",
+      "文生视频",
+      "多图参考",
+      "运镜",
+      "进阶"
+    ],
+    "source": "整理自 2026 可灵 3.0 多模态视觉语言(MVL)/3D 运镜轨迹与全球榜单评测",
+    "updated": "2026-06-28"
+  },
+  {
+    "id": "image-product-relight-bg-swap",
+    "category": "image",
+    "level": "beginner",
+    "title_zh": "一句话给产品图换背景、重新打光（电商出图）",
+    "title_en": "Swap Background and Relight a Product Photo in One Sentence (E-commerce)",
+    "body_zh": "2026 年的「对话式改图」模型（如 Nano Banana、即梦）让电商出图变得很简单：上传一张手机随手拍的产品照，用大白话让它换背景、重新打光，而产品本身保持不变。新手照这个顺序说：1）先锁定主体——「保持这件产品的外形、颜色、Logo 和文字完全不变」；2）再说背景——「把背景换成干净的浅灰色影棚背景」或「放到木质桌面、旁边有绿植」；3）再说打光——「用柔和的侧光，营造高级感，去掉杂乱阴影」；4）最后说画幅与风格——「正方形构图，适合电商主图，干净简洁」。出图后用一句话继续微调：「光再亮一点」「背景再简单些」「给产品加一点反光」。小贴士：一次只改一个地方，改崩了就退回上一版重说；要做一套图就固定同一句背景+打光描述，换产品复用。",
+    "body_en": "2026's conversational image-editing models (like Nano Banana and Jimeng) make e-commerce shots easy: upload a casual phone photo of a product and, in plain language, have it swap the background and relight while keeping the product itself unchanged. Beginners, say it in this order: 1) Lock the subject first — 'keep this product's shape, color, logo, and text exactly the same'; 2) Then the background — 'replace the background with a clean light-gray studio backdrop' or 'place it on a wooden table with a plant beside it'; 3) Then the lighting — 'use soft side light for a premium feel, remove messy shadows'; 4) Finally the framing and style — 'square composition, clean and minimal, suitable for a primary e-commerce image.' After the first result, refine with one sentence at a time: 'a bit brighter,' 'simpler background,' 'add a subtle reflection to the product.' Tips: change only one thing per turn, and if it breaks, revert to the last version and re-describe; for a matching set, reuse the same background+lighting sentence and just swap the product.",
+    "models": [
+      "Nano Banana",
+      "即梦"
+    ],
+    "tags": [
+      "文生图",
+      "电商",
+      "改图",
+      "打光",
+      "新手"
+    ],
+    "source": "整理自 2026 对话式改图（Nano Banana / 即梦）电商出图实践",
+    "updated": "2026-06-28"
   }
 ];

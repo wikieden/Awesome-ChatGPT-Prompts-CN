@@ -11,12 +11,12 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 ### Categories
 
-- 🚀 **Getting Started** (11)
+- 🚀 **Getting Started** (12)
 - 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (10)
-- 🎬 **Text-to-Video** (15)
-- 🧩 **Skills** (12)
-- 💡 **Prompt Craft** (33)
+- 🖼️ **Text-to-Image** (12)
+- 🎬 **Text-to-Video** (18)
+- 🧩 **Skills** (13)
+- 💡 **Prompt Craft** (36)
 
 ## 🚀 Getting Started
 
@@ -74,6 +74,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟢 Beginner ｜ 豆包`  ·  整理自 2026-06 豆包 Seed1.5-VL 多模态能力
 
 > ByteDance's Doubao feels smooth for quick questions and voice chat, and it now does multimodal reasoning (Seed1.5-VL) — not just typing. Three handy beginner uses: 1) Photo questions — snap an object/menu/manual/math problem/street sign and ask "what is this / how do I use it / translate this / how do I solve this"; 2) Voice practice — rehearse speaking, mock interviews, or speeches: "act as my interviewer, ask one question at a time, critique my answer, then ask the next"; 3) On the go — have it read news, summarize articles, or capture to-dos by voice during your commute. Try this opener: "Let's talk by voice; be my spoken-English coach on everyday travel. Ask me one question in simple English first, and gently correct me if I'm wrong." Treat Doubao as an assistant that can see and hear, not just a chat box.
+
+### New in the Gemini App (2026): Daily Brief + Spark Agent — Treat It as a Proactive Assistant
+`🟢 Beginner ｜ Gemini`  ·  整理自 2026-05 Google I/O Gemini App 更新（Daily Brief / Spark / Omni）
+
+> In 2026 Google added a wave of consumer-friendly features to the Gemini app. Three worth trying first: 1) Daily Brief — have it bundle your schedule, key emails, and news into one morning summary: "Give me today's Daily Brief in three blocks — Today's Schedule / Needs a Reply / Worth Reading — under 200 words"; 2) Spark, a personal agent that handles multi-step tasks (look things up, organize, draft) — before using it, make it "restate the goal, list steps, and wait for my confirmation before acting"; 3) Gemini Omni video, which generates short clips for demos or drafts. Beginner tip: spell out what you want, for whom, how long, and what style — the more specific, the more reliable. Try: "Summarize the 5 important emails I got this week as a Daily Brief, one line each plus a suggested reply."
 
 ## 🎭 Role Prompts
 
@@ -883,6 +888,16 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 > One of Google Nano Banana Pro's (Gemini 3 Pro Image) strongest abilities is character consistency: a single workflow can hold up to 5 characters and 14 objects without redrawing faces each time — ideal for comics, storyboards, and product-line visuals. Three beginner steps: 1) Define the character fully in the very first prompt — name it as a variable, e.g. "CHARACTER_A: Asian woman around 30, shoulder-length black hair, round glasses, beige trench coat," then just say "put CHARACTER_A by the cafe window" later; session memory keeps the look stable; 2) Assign roles to multiple reference images — "use Image 1 as the character reference, keep this exact face and features; use Image 2 as the pose reference, put the character in that pose"; 3) Write prompts as subject + composition + action + scene + style, then add camera, lighting, and any on-image text. Turn my characters and plot into a set of consistent storyboard prompts in the format above: {describe characters and story}
 
+### Midjourney V8.1 Workflow: Iterate Fast in Draft Mode, Then Lock In with HD + Omni Reference
+`🟡 Intermediate ｜ Midjourney`  ·  整理自 2026-06 Midjourney V8.1（Draft Mode / HD / Omni Reference）
+
+> Midjourney V8.1 became the default on 2026-06-10 and runs about 4–5x faster than earlier versions. A smart workflow has two stages: 1) Iterate in Draft Mode — roughly 1/10 the cost and ~5x the speed, perfect for quickly testing composition, style, and moodboards; don't chase sharpness, just nail the direction; 2) Finalize with quality — once you're happy, drop draft and add `--hd` (or enable HD in settings) for 2K output with no separate upscale needed. Two handy boosters: `--sref` to lock a style, and Omni Reference to keep the same character/object consistent across scenes (essential for series, picture books, brand assets). For prompts, describe your idea in Chinese to ChatGPT/Claude first and have it translated into English with lens/lighting/composition terms (MJ is most reliable in English). Template: "[subject] + [action/scene] + [style/reference] + [lighting, e.g. golden hour] + [composition/lens] --ar 16:9 --hd".
+
+### Swap Background and Relight a Product Photo in One Sentence (E-commerce)
+`🟢 Beginner ｜ Nano Banana · 即梦`  ·  整理自 2026 对话式改图（Nano Banana / 即梦）电商出图实践
+
+> 2026's conversational image-editing models (like Nano Banana and Jimeng) make e-commerce shots easy: upload a casual phone photo of a product and, in plain language, have it swap the background and relight while keeping the product itself unchanged. Beginners, say it in this order: 1) Lock the subject first — 'keep this product's shape, color, logo, and text exactly the same'; 2) Then the background — 'replace the background with a clean light-gray studio backdrop' or 'place it on a wooden table with a plant beside it'; 3) Then the lighting — 'use soft side light for a premium feel, remove messy shadows'; 4) Finally the framing and style — 'square composition, clean and minimal, suitable for a primary e-commerce image.' After the first result, refine with one sentence at a time: 'a bit brighter,' 'simpler background,' 'add a subtle reflection to the product.' Tips: change only one thing per turn, and if it breaks, revert to the last version and re-describe; for a matching set, reuse the same background+lighting sentence and just swap the product.
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -967,6 +982,21 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 > I'm a beginner who wants to make AI video but doesn't know which tool to pick. Using a table of Scenario → Recommended tool → One-line reason, help me decide across these needs: 1) cinematic realism and complex physical motion; 2) coherent character motion with accurate lip-sync; 3) usable in China, Chinese-prompt-friendly, fast to render; 4) image-to-video, animating a single still; 5) tight budget, want to try free first. As of mid-2026 the commonly compared options include OpenAI Sora 2, Kuaishou Kling 2.x, ByteDance Jimeng, Google Veo 3, and Runway Gen-3/4. Objectively explain each one's strengths and weaknesses, flag the duration/resolution/watermark limits, and end with one general tip: render a 5-second test first, then extend.
 
+### A Universal Structure for AI Video Prompts: Subject + Action + Camera + Light (Kling / Veo / Sora)
+`🟡 Intermediate ｜ 可灵 Kling · Veo · Sora · 即梦`  ·  整理自 2026 AI 视频提示词实践（Kling / Veo / Sora 运镜结构）
+
+> The most common way text-to-video fails is writing just "a girl walking" — the model doesn't know how the camera moves or the pacing, so it drifts. Whether you use Kling, Veo, or Sora, a stable structure helps a lot: 1) Subject — who/what, with appearance details; 2) Action — what they do, in what order; 3) Camera — shot size and movement (e.g. "medium shot, slow push-in"; "aerial top-down, pan right"); 4) Light & mood (e.g. "warm dusk light, cinematic"); 5) Duration & pacing (e.g. "5s, single take, slow motion"). Template: "[subject with appearance] is [action]; camera: [shot + movement]; light: [mood]; [duration/pacing]." Two field tips: don't cram many actions into one shot — one shot, one idea; for a consistent series, keep the subject description and style words fixed. When image-first tools (e.g. Midjourney video) are costly or underwhelming, prefer Kling/Veo for video.
+
+### Sora 2 Native Audio: One Prompt for a Shot with Dialogue and Ambient Sound
+`🟡 Intermediate ｜ Sora`  ·  整理自 2026 OpenAI Sora 2 发布与原生音频/对白同步用法
+
+> Sora 2's headline upgrade is native audio-visual sync — instead of generating silent footage and dubbing it later, a single generation comes with dialogue, ambient sound, and effects, with lips matching the voice. To use it well, write the sound into the prompt too: 1) Beyond the visuals, state who speaks, their exact lines (in quotes), and the tone; 2) Spell out ambient sound, e.g. 'rain on the window, distant traffic, indoor echo'; 3) Note the timing of key effects, e.g. 'the door is pushed open at second 3 with a creak'; 4) Keep shots around 20s at 1080p — shorter is steadier; 5) For narration/monologue, just say 'voice-over reads: ...'. Template: '[scene and lighting]. Camera: [movement]. Character A ([tone]) says: "[line]". Ambient: [ambient sound]. SFX: [timing + effect]. 8 seconds, 1080p.' Validate audio sync on a short shot first, then extend.
+
+### Kling 3.0 Multi-Image Reference + 3D Camera Trajectory: Lock the Shot, Then Generate
+`🔴 Advanced ｜ 可灵`  ·  整理自 2026 可灵 3.0 多模态视觉语言(MVL)/3D 运镜轨迹与全球榜单评测
+
+> Kling 3.0 topped several global video leaderboards in early 2026, and its two most practical weapons for creators are multi-image reference and 3D camera-trajectory control — turning 'roll the dice and hope' into 'lock it in, then generate.' How to use them: 1) Multi-image reference — upload character reference shots, scene plates, and prop images together so it keeps faces, wardrobe, and sets consistent across shots, fixing the classic 'the face changes every cut' problem; 2) 3D camera trajectory — instead of just 'push in / pull out,' specify the camera's path through space (e.g. orbit the subject halfway, then rise into a high-angle), for far more controllable, camera-like moves; 3) Pair it with the shot-arrangement / video-continuation features for multi-minute continuous storytelling — lock each shot's reference images and camera move first, then chain them. Practical tip: validate character consistency and the camera path on a single shot first, then batch-generate and continue, so a long piece doesn't fall apart all at once.
+
 ## 🧩 Skills
 
 ### Skill: prompt auto-optimizer
@@ -1028,6 +1058,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟢 Beginner ｜ 通义`  ·  整理自 2026-06 通义千问 App「办事时代」升级
 
 > In 2026 the Qwen (Tongyi Qianwen) app moved into a "get-things-done" era, deeply integrated with Taobao, Alipay, and Amap so it can run an errand end-to-end — search → compare → order/book — instead of only answering. How beginners use it: state the request fully and have it propose before acting. Template: "Handle this for me: {the task, e.g. 'book a Beijing→Shanghai flight next Friday, afternoon departure, window seat, under 800 RMB'}. First list 2-3 candidate options (price, time, key differences) for me to choose; only order after I confirm; pause before any payment step for my final OK." Keys: 1) give clear constraints (time/budget/preferences/quantity); 2) demand "options first, then execute" — never let it pay outright; 3) do one errand at a time, split complex needs. Convenient and still under your control.
+
+### A Reliable Agent Workflow: Research → Plan → Execute → Review (and When to Use a Skill)
+`🔴 Advanced ｜ Claude`  ·  整理自 2026-06 Claude Code 最佳实践与 Skill 设计指南
+
+> The biggest trap when running Claude Code or other agents on complex tasks is jumping straight to doing — and solving the wrong problem. In 2026 mature teams converge on one pipeline: Research → Plan → Execute → Review → Ship. How to apply it: 1) Research before writing — have it read the relevant files/material and state the current situation and constraints in a paragraph before producing code; 2) Make planning its own step — get a plan and confirm it first (many tools have a plan mode), separating exploration from execution; 3) Demand evidence, not "it's done" — have it paste test output, the command it ran and what it returned, or a screenshot; reviewing evidence is faster than re-running it yourself; 4) Review in a fresh chat — a clean context avoids bias toward code it just wrote. Skill selection rule of thumb: just a prompt template → use a slash command; real domain logic or bundled scripts/files → write a Skill; isolated, parallel sub-work → use a subagent. One more: put global rules (e.g. "never commit .env") in CLAUDE.md so they load every time; put domain-specific workflows in Skills that trigger only when needed.
 
 ## 💡 Prompt Craft
 
@@ -1221,5 +1256,20 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟢 Beginner ｜ GPT · Claude · Gemini · 通义`  ·  原创（呼应 2026 智能体办事趋势）
 
 > In 2026 more and more AIs can actually do things for you (Qwen errands, Gemini Spark, various agent plugins) — convenient, but easier to get wrong: wrong order, wrong email, wrong file edit. One habit prevents most mishaps: make it "restate + plan + pause for confirmation, then execute." A universal prefix to paste before any instruction that lets an AI take action: "Before you actually perform anything with consequences (ordering, paying, sending, deleting, editing files, publishing), do three things first: 1) restate my goal in one sentence; 2) list the concrete steps you'll take and what they'll affect; 3) stop and wait for me to reply 'confirm' before doing it. If anything is unclear, ask me — don't guess key details (amount, recipient, quantity, date)." This works for any AI with execution power and blocks most avoidable accidents before they happen.
+
+### How to Actually Use Ultra-Long Context: Working with Million-Token Windows (GPT-5.6 / DeepSeek)
+`🟡 Intermediate ｜ GPT · DeepSeek · 通义 · Gemini`  ·  整理自 2026-06 GPT-5.6 / DeepSeek 百万级上下文能力
+
+> In 2026 context windows keep growing (GPT-5.6 ~1.5M tokens; DeepSeek and Qwen also hit the million range). But "it fits" doesn't mean "it works" — dump a huge pile at once and the model loses the thread or skips middle content (the "lost in the middle" problem). Three practical habits: 1) Task first, then material — open with one line stating "what I want you to do with everything below," then paste the content, then restate the ask; don't bury key info in the middle; 2) Make it index first — "Summarize each of these 8 documents in one sentence with its number and topic, then wait for me to pick which to dig into"; 3) Require citations — "When you answer, cite which document/paragraph each fact came from," which helps you verify and forces it to actually read. Great for: contract review, reading many papers, sorting chat logs, editing code across files. Template: "Below are [N] sources. The task is [X]. First list a one-sentence summary of each, then answer, citing the source number after each conclusion."
+
+### GPT-5.6 + Codex: Treat Coding as Delegating to an Agent
+`🔴 Advanced ｜ GPT`  ·  整理自 2026-06 OpenAI GPT-5.6 / Codex 灰度测试报道与智能体编码实践
+
+> By late June 2026, OpenAI's GPT-5.6 is rolling out gradually inside the Codex backend (canary testing), with a focus on stronger agentic coding — not line-by-line autocomplete, but handing it a whole task to plan, edit files, run tests, and iterate on its own. Getting the most out of it is less about fancy prompts and more about stating the task clearly and leaving it a way to verify: 1) Give the goal, not the steps — spell out what to build, the constraints, and what 'done' means, instead of scripting its process; 2) Have it restate the plan before acting, confirm the direction, then let it run; 3) Always wire in automatic verification — make it run tests/type checks/lint and paste the output back; an agent that can check itself is one you can trust; 4) Commit in small steps — after each testable milestone, have it stop for your review so it can't scramble the whole repo in one shot. Quick start: 'The goal is X with constraints Y. Give me a plan first; once I confirm, implement it and self-check against the existing tests, pausing to report after each test passes.'
+
+### Gemini 3.5 Pro Deep Think + Long Context: When to Turn It On
+`🟡 Intermediate ｜ Gemini`  ·  整理自 2026 Google I/O Gemini 3.5 Pro 发布与 Deep Think / 长上下文用法
+
+> Google unveiled Gemini 3.5 Pro at I/O 2026, rolling out from June, and two features matter most day to day: an optional Deep Think reasoning mode and a context window approaching 2 million tokens. Neither is 'always better' — switch them on by scenario: 1) Worth Deep Think: multi-step math/logic, design decisions with real trade-offs, gnarly code debugging, or drawing conclusions after reading a pile of material — these earn the slower-but-steadier answer; 2) Don't bother for simple Q&A, fixing typos, or drafting a line of copy — it just gets slower and burns quota; 3) Use the long context right: drop a whole manual, an entire codebase, or a 50-page contract in at once for cross-document Q&A, letting it reconcile passages, rather than feeding it in fragments; 4) In the prompt, explicitly ask it to 'think it through before answering, reasoning step by step' and to 'state its evidence and where it's unsure.' Rule of thumb: Deep Think for hard problems, big context for long material, both off for trivial tasks.
 
 <!-- AUTO-PROMPTS:END -->
