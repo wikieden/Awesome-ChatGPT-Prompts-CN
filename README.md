@@ -9,7 +9,9 @@
 
 1. 如果遇到所在国家不支持服务（County not supported）请用机场全局翻墙，中间电话短信验证用虚拟号码，[虚拟号码服务商sms-activate](https://sms-activate.org/?ref=3712886) 
 
-   > 🪜 **推荐机场 SSONE**（稳定直连 ChatGPT / Claude / Gemini，支持 4K 流媒体）：[点此注册](https://sky.ssonenetwork.com/register?aff=NLEVymB2) ｜ 备用网址导航：[hello36d](https://hello36d.com/register?aff=NLEVymB2)
+   > 🪜 **推荐机场**（稳定直连 ChatGPT / Claude / Gemini，支持 4K 流媒体）：
+   > - **SSONE**：[点此注册](https://sky.ssonenetwork.com/register?aff=NLEVymB2) ｜ 备用网址导航：[hello36d](https://hello36d.com/register?aff=NLEVymB2)
+   > - **精灵学院**：[点此注册](https://jump.riolu.work/register?aff=A6G0ImUB)
 
 ## 它能干什么? 直接问它
 
