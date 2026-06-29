@@ -11,12 +11,12 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 ### Categories
 
-- 🚀 **Getting Started** (12)
+- 🚀 **Getting Started** (13)
 - 🎭 **Role Prompts** (149)
 - 🖼️ **Text-to-Image** (12)
-- 🎬 **Text-to-Video** (18)
-- 🧩 **Skills** (13)
-- 💡 **Prompt Craft** (36)
+- 🎬 **Text-to-Video** (19)
+- 🧩 **Skills** (14)
+- 💡 **Prompt Craft** (37)
 
 ## 🚀 Getting Started
 
@@ -79,6 +79,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟢 Beginner ｜ Gemini`  ·  整理自 2026-05 Google I/O Gemini App 更新（Daily Brief / Spark / Omni）
 
 > In 2026 Google added a wave of consumer-friendly features to the Gemini app. Three worth trying first: 1) Daily Brief — have it bundle your schedule, key emails, and news into one morning summary: "Give me today's Daily Brief in three blocks — Today's Schedule / Needs a Reply / Worth Reading — under 200 words"; 2) Spark, a personal agent that handles multi-step tasks (look things up, organize, draft) — before using it, make it "restate the goal, list steps, and wait for my confirmation before acting"; 3) Gemini Omni video, which generates short clips for demos or drafts. Beginner tip: spell out what you want, for whom, how long, and what style — the more specific, the more reliable. Try: "Summarize the 5 important emails I got this week as a Daily Brief, one line each plus a suggested reply."
+
+### Use Top-Tier AI for Free (Where to Start, Second Half of 2026)
+`🟢 Beginner ｜ GPT · Claude · DeepSeek · Kimi · 豆包 · 通义 · 即梦 · 可灵`  ·  整理自 2026 年 6 月各家免费版现状（GPT-5.5 / Claude Sonnet / DeepSeek V4 / Kimi 等）
+
+> Good news in 2026: you can get near top-tier models for free, and open-weight Chinese models have driven prices way down. Beginners can pick a free entry point by use case: (1) Everyday Q&A/writing — ChatGPT Free runs GPT-5.5 (with usage limits), Claude Free runs Sonnet, and for Chinese models try DeepSeek's site (V4 is free) or Kimi (kimi.com); (2) Long documents — DeepSeek and Kimi both have huge context windows, so drop in a whole PDF and ask follow-ups; (3) A 'doer' agent — the Kimi app and the Tongyi/Doubao apps support voice and photo input; (4) Images — Jimeng and Kling offer free quotas; (5) Video — Kling and Jimeng have daily free quotas. Three steps to start: try the free web versions first and send the same question to two or three models to see which suits you; only consider a subscription for the one you use most; mask any private or sensitive data before uploading. One-line picker prompt: 'I want to ______ (write / research / code / make images / make video) on a $0 budget. Recommend only tools usable for free right now, with their web entry point and free-quota limits.'
 
 ## 🎭 Role Prompts
 
@@ -997,6 +1002,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 
 > Kling 3.0 topped several global video leaderboards in early 2026, and its two most practical weapons for creators are multi-image reference and 3D camera-trajectory control — turning 'roll the dice and hope' into 'lock it in, then generate.' How to use them: 1) Multi-image reference — upload character reference shots, scene plates, and prop images together so it keeps faces, wardrobe, and sets consistent across shots, fixing the classic 'the face changes every cut' problem; 2) 3D camera trajectory — instead of just 'push in / pull out,' specify the camera's path through space (e.g. orbit the subject halfway, then rise into a high-angle), for far more controllable, camera-like moves; 3) Pair it with the shot-arrangement / video-continuation features for multi-minute continuous storytelling — lock each shot's reference images and camera move first, then chain them. Practical tip: validate character consistency and the camera path on a single shot first, then batch-generate and continue, so a long piece doesn't fall apart all at once.
 
+### Kling Motion Control: Direct Movement Precisely with a Motion Brush / Reference Video
+`🟡 Intermediate ｜ 可灵 · 即梦 · Midjourney`  ·  整理自 2026 可灵（Kling 2.6 / 3.0）Motion Control 与音画同步功能
+
+> Describing motion in text alone often makes AI video 'move wrong.' Kling's Motion Control is the most controllable approach today, giving you three ways to direct movement — pick per shot: 1) Motion brush — 'paint' the regions you want to move, e.g. let only the hair and skirt sway while the person stays put; great for local motion; 2) Reference-video motion transfer — upload a motion reference (a turn, a camera move) and have the AI map that motion onto your shot; great for replicating a specific action; 3) First/last frame — give a start and end image and let it fill the middle; great for seamless transitions or loops. Workflow: generate a high-quality first frame in Midjourney/Jimeng, then open Kling and choose Motion Control; keep the text prompt for overall pacing, camera, and lighting only, and hand 'who moves and how' to the brush or reference video for steadier results. Tips: control one main motion per generation, and stitch shots for complex action; since 2.6, audio and video can be generated together in one pass, saving you the dubbing step.
+
 ## 🧩 Skills
 
 ### Skill: prompt auto-optimizer
@@ -1063,6 +1073,11 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🔴 Advanced ｜ Claude`  ·  整理自 2026-06 Claude Code 最佳实践与 Skill 设计指南
 
 > The biggest trap when running Claude Code or other agents on complex tasks is jumping straight to doing — and solving the wrong problem. In 2026 mature teams converge on one pipeline: Research → Plan → Execute → Review → Ship. How to apply it: 1) Research before writing — have it read the relevant files/material and state the current situation and constraints in a paragraph before producing code; 2) Make planning its own step — get a plan and confirm it first (many tools have a plan mode), separating exploration from execution; 3) Demand evidence, not "it's done" — have it paste test output, the command it ran and what it returned, or a screenshot; reviewing evidence is faster than re-running it yourself; 4) Review in a fresh chat — a clean context avoids bias toward code it just wrote. Skill selection rule of thumb: just a prompt template → use a slash command; real domain logic or bundled scripts/files → write a Skill; isolated, parallel sub-work → use a subagent. One more: put global rules (e.g. "never commit .env") in CLAUDE.md so they load every time; put domain-specific workflows in Skills that trigger only when needed.
+
+### Kimi K2.7: The Open-Weight Model That's Best at Using Tools (MCP / Multi-step Agents)
+`🟡 Intermediate ｜ Kimi`  ·  整理自 2026 年 6 月 Kimi K2.7 发布（MCP 工具调用领先、思考 token 成本下降约 30%）
+
+> Released in June 2026, Kimi K2.7 (Moonshot) is one of the top open-weight models for MCP tool-use, and it cut 'thinking-token' cost by about 30% versus the previous K2.6 — making it a strong pick for hooking AI up to tools and letting it finish multi-step jobs on its own. To use it as a 'doer' agent: 1) Break the task into verifiable steps and say 'self-check after each step before moving on'; 2) Connect it to MCP/tools (files, search, code execution) and spell out which tools exist and when to use them; 3) Make it 'restate the plan and wait for my OK before acting' so it doesn't drift; 4) On long tasks, have it report progress and blockers periodically. Prompt skeleton: 'You are a tool-using execution assistant. Goal: ______. Available tools: ______. Rules: for each step, state the plan → I confirm → execute → self-check → report; on error, roll back and retry; never pretend a step is done.' Tips: try it free at kimi.com and in the Kimi app; switch to the API for automation/batch work and enable 'preserve thinking' mode when you need it.
 
 ## 💡 Prompt Craft
 
@@ -1271,5 +1286,10 @@ A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, 
 `🟡 Intermediate ｜ Gemini`  ·  整理自 2026 Google I/O Gemini 3.5 Pro 发布与 Deep Think / 长上下文用法
 
 > Google unveiled Gemini 3.5 Pro at I/O 2026, rolling out from June, and two features matter most day to day: an optional Deep Think reasoning mode and a context window approaching 2 million tokens. Neither is 'always better' — switch them on by scenario: 1) Worth Deep Think: multi-step math/logic, design decisions with real trade-offs, gnarly code debugging, or drawing conclusions after reading a pile of material — these earn the slower-but-steadier answer; 2) Don't bother for simple Q&A, fixing typos, or drafting a line of copy — it just gets slower and burns quota; 3) Use the long context right: drop a whole manual, an entire codebase, or a 50-page contract in at once for cross-document Q&A, letting it reconcile passages, rather than feeding it in fragments; 4) In the prompt, explicitly ask it to 'think it through before answering, reasoning step by step' and to 'state its evidence and where it's unsure.' Rule of thumb: Deep Think for hard problems, big context for long material, both off for trivial tasks.
+
+### Technique: Make AI Separate What It Knows from What It's Guessing (Fewer Hallucinations)
+`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`  ·  整理自 2026 年 6 月各家模型幻觉率下降的报道与「可信度分层」实践
+
+> 2026's newer models (GPT-5.5, Claude, Gemini, DeepSeek) hallucinate noticeably less, but confident-sounding fabrication still happens — especially when you ask for specific numbers, names, dates, or legal clauses. The cheapest fix isn't switching models; it's asking the model to tag its own confidence. Say it plainly: 'Split your answer into three parts: (1) what you're sure of (state the basis); (2) what's uncertain or speculative; (3) what I need to verify. For any specific number, date, or quote you're unsure about, say "not sure" instead of making it up.' For important decisions, add: 'Point out the single claim in your answer most likely to be wrong, and tell me how to check it.' Why it works: you can see at a glance which parts are usable now and which need checking, instead of being lulled by a fluent tone. Tip: web search/retrieval reduces fabrication further, but 'confidence tagging + self-flagging weak spots' works on every model at no extra cost.
 
 <!-- AUTO-PROMPTS:END -->
