@@ -4789,5 +4789,103 @@ window.PROMPTS = [
     ],
     "source": "整理自 2026 对话式改图（Nano Banana / 即梦）电商出图实践",
     "updated": "2026-06-28"
+  },
+  {
+    "id": "kimi-k27-agent-mcp",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Kimi K2.7：开源里最会「用工具」的智能体（MCP / 多步办事）",
+    "title_en": "Kimi K2.7: The Open-Weight Model That's Best at Using Tools (MCP / Multi-step Agents)",
+    "body_zh": "2026 年 6 月上线的 Kimi K2.7（月之暗面）是目前开源权重里 MCP 工具调用得分最高的模型之一，相比上一版 K2.6 还把「思考 token」成本降了约三成，特别适合让 AI 接上工具、连续多步把一件事办完。怎么用它当「办事智能体」：1）先把任务拆成可验证的小步骤，写清「每做完一步先自检，再决定下一步」；2）把它接到 MCP/工具（文件、搜索、代码执行等），明确告诉它「能用哪些工具、什么时候该用」；3）让它「先复述计划等我确认，再动手」，避免跑偏；4）长任务里要求它定期汇报进度和遇到的问题。提示词骨架：「你是一个会使用工具的执行型助手。目标：______。可用工具：______。规则：每步先说计划→我确认→执行→自检→报告结果，出错就回退重试，不要假装完成。」小贴士：免费可在 kimi.com 网页和 App 体验；要跑自动化/批量时再走 API，按需开启「保留思考」模式。",
+    "body_en": "Released in June 2026, Kimi K2.7 (Moonshot) is one of the top open-weight models for MCP tool-use, and it cut 'thinking-token' cost by about 30% versus the previous K2.6 — making it a strong pick for hooking AI up to tools and letting it finish multi-step jobs on its own. To use it as a 'doer' agent: 1) Break the task into verifiable steps and say 'self-check after each step before moving on'; 2) Connect it to MCP/tools (files, search, code execution) and spell out which tools exist and when to use them; 3) Make it 'restate the plan and wait for my OK before acting' so it doesn't drift; 4) On long tasks, have it report progress and blockers periodically. Prompt skeleton: 'You are a tool-using execution assistant. Goal: ______. Available tools: ______. Rules: for each step, state the plan → I confirm → execute → self-check → report; on error, roll back and retry; never pretend a step is done.' Tips: try it free at kimi.com and in the Kimi app; switch to the API for automation/batch work and enable 'preserve thinking' mode when you need it.",
+    "models": [
+      "Kimi"
+    ],
+    "tags": [
+      "Kimi",
+      "K2.7",
+      "智能体",
+      "MCP",
+      "工具调用",
+      "开源模型"
+    ],
+    "source": "整理自 2026 年 6 月 Kimi K2.7 发布（MCP 工具调用领先、思考 token 成本下降约 30%）",
+    "updated": "2026-06-29"
+  },
+  {
+    "id": "craft-separate-facts-from-guesses",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "技巧：让 AI 把「确定的」和「猜的」分开标出来（少踩幻觉坑）",
+    "title_en": "Technique: Make AI Separate What It Knows from What It's Guessing (Fewer Hallucinations)",
+    "body_zh": "2026 年的新模型（如 GPT-5.5、Claude、Gemini、DeepSeek）幻觉已经明显减少，但「一本正经地编」还是会发生，尤其在你问具体数字、人名、日期、法条时。最省事的防坑办法不是换模型，而是在提示词里要求它「分层标注可信度」。直接这样说：「回答时请分成三块：①我能确定的（请说明依据）；②我不太确定、属于推测的；③需要你去核实的。任何具体数字/日期/引用，如果你没有把握，就直说『不确定』，不要编。」如果是重要决定，再追加一句：「请把答案里最可能出错的一处指出来，并告诉我怎么验证。」这样做的好处：你一眼就能看出哪部分能直接用、哪部分要再查，而不是被流畅的语气骗过去。小贴士：联网/检索功能能进一步降低编造，但「分层标注 + 让它自曝薄弱点」对所有模型都管用，且不花额外成本。",
+    "body_en": "2026's newer models (GPT-5.5, Claude, Gemini, DeepSeek) hallucinate noticeably less, but confident-sounding fabrication still happens — especially when you ask for specific numbers, names, dates, or legal clauses. The cheapest fix isn't switching models; it's asking the model to tag its own confidence. Say it plainly: 'Split your answer into three parts: (1) what you're sure of (state the basis); (2) what's uncertain or speculative; (3) what I need to verify. For any specific number, date, or quote you're unsure about, say \"not sure\" instead of making it up.' For important decisions, add: 'Point out the single claim in your answer most likely to be wrong, and tell me how to check it.' Why it works: you can see at a glance which parts are usable now and which need checking, instead of being lulled by a fluent tone. Tip: web search/retrieval reduces fabrication further, but 'confidence tagging + self-flagging weak spots' works on every model at no extra cost.",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini",
+      "DeepSeek"
+    ],
+    "tags": [
+      "提示词技巧",
+      "幻觉",
+      "事实核查",
+      "可信度",
+      "新手"
+    ],
+    "source": "整理自 2026 年 6 月各家模型幻觉率下降的报道与「可信度分层」实践",
+    "updated": "2026-06-29"
+  },
+  {
+    "id": "video-kling-motion-control",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "可灵 Motion Control：用「运动笔刷 / 参考视频」精准指挥画面动起来",
+    "title_en": "Kling Motion Control: Direct Movement Precisely with a Motion Brush / Reference Video",
+    "body_zh": "光靠文字描述运动，AI 视频常常「动得不对」。可灵（Kling）的 Motion Control 是目前最可控的办法，给你三种指挥方式，按需选：1）运动笔刷——在画面上「刷」出要动的区域，比如只让头发和裙摆飘、人物站着不走，适合局部动效；2）参考视频迁移运动——上传一段动作参考（比如某个转身或运镜），让 AI 把这套运动「套」到你的画面上，适合复刻特定动作；3）首尾帧——给开头和结尾两张图，让它补中间，适合做无缝转场或循环。实操建议：先用 Midjourney/即梦出一张高质量首帧，再进可灵选 Motion Control；文字提示只补充「整体节奏、镜头、光线」，把「谁动、怎么动」交给笔刷或参考视频，成片更稳。小贴士：一次只控一种主要运动，想要复杂动作就分镜拼接；2.6 起可同一遍生成音画同步，省去后期配音。",
+    "body_en": "Describing motion in text alone often makes AI video 'move wrong.' Kling's Motion Control is the most controllable approach today, giving you three ways to direct movement — pick per shot: 1) Motion brush — 'paint' the regions you want to move, e.g. let only the hair and skirt sway while the person stays put; great for local motion; 2) Reference-video motion transfer — upload a motion reference (a turn, a camera move) and have the AI map that motion onto your shot; great for replicating a specific action; 3) First/last frame — give a start and end image and let it fill the middle; great for seamless transitions or loops. Workflow: generate a high-quality first frame in Midjourney/Jimeng, then open Kling and choose Motion Control; keep the text prompt for overall pacing, camera, and lighting only, and hand 'who moves and how' to the brush or reference video for steadier results. Tips: control one main motion per generation, and stitch shots for complex action; since 2.6, audio and video can be generated together in one pass, saving you the dubbing step.",
+    "models": [
+      "可灵",
+      "即梦",
+      "Midjourney"
+    ],
+    "tags": [
+      "文生视频",
+      "可灵",
+      "运动控制",
+      "运动笔刷",
+      "参考视频",
+      "音画同步"
+    ],
+    "source": "整理自 2026 可灵（Kling 2.6 / 3.0）Motion Control 与音画同步功能",
+    "updated": "2026-06-29"
+  },
+  {
+    "id": "start-free-top-ai-2026h2",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "不花钱也能用上「顶配」AI（2026 下半年免费入口）",
+    "title_en": "Use Top-Tier AI for Free (Where to Start, Second Half of 2026)",
+    "body_zh": "2026 年一个好消息：免费就能用到接近「顶配」的模型，国产开源模型还把价格打了下来。新手按用途挑免费入口就行：①日常问答/写作——ChatGPT 免费版跑 GPT-5.5（有用量上限）、Claude 免费版跑 Sonnet、国产可上 DeepSeek 官网（V4 免费）、Kimi（kimi.com）；②啃长文档/长资料——DeepSeek、Kimi 都有超长上下文，把整份 PDF 丢进去再追问；③要「会办事」的智能体——Kimi 的 App、通义/豆包 App 都能动嘴/拍照交互；④画图——即梦、可灵有免费额度；⑤做视频——可灵、即梦有每日免费额度。新手起步三步：先在网页版免费试，把同一个问题丢给两三个模型对比谁更合你的口味；常用的那个再考虑要不要开会员；涉及隐私/重要资料先打码再上传。一句话挑选提示词：「我要做 ______（写作/查资料/编程/画图/做视频），预算为 0，请只推荐现在能免费使用的工具，并给出网页入口和免费额度限制。」",
+    "body_en": "Good news in 2026: you can get near top-tier models for free, and open-weight Chinese models have driven prices way down. Beginners can pick a free entry point by use case: (1) Everyday Q&A/writing — ChatGPT Free runs GPT-5.5 (with usage limits), Claude Free runs Sonnet, and for Chinese models try DeepSeek's site (V4 is free) or Kimi (kimi.com); (2) Long documents — DeepSeek and Kimi both have huge context windows, so drop in a whole PDF and ask follow-ups; (3) A 'doer' agent — the Kimi app and the Tongyi/Doubao apps support voice and photo input; (4) Images — Jimeng and Kling offer free quotas; (5) Video — Kling and Jimeng have daily free quotas. Three steps to start: try the free web versions first and send the same question to two or three models to see which suits you; only consider a subscription for the one you use most; mask any private or sensitive data before uploading. One-line picker prompt: 'I want to ______ (write / research / code / make images / make video) on a $0 budget. Recommend only tools usable for free right now, with their web entry point and free-quota limits.'",
+    "models": [
+      "GPT",
+      "Claude",
+      "DeepSeek",
+      "Kimi",
+      "豆包",
+      "通义",
+      "即梦",
+      "可灵"
+    ],
+    "tags": [
+      "新手",
+      "免费",
+      "选工具",
+      "2026",
+      "国产模型"
+    ],
+    "source": "整理自 2026 年 6 月各家免费版现状（GPT-5.5 / Claude Sonnet / DeepSeek V4 / Kimi 等）",
+    "updated": "2026-06-29"
   }
 ];
