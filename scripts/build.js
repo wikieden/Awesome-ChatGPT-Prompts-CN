@@ -76,9 +76,13 @@ if (fs.existsSync(README)) {
 fs.writeFileSync(README, head + section("zh") + "\n", "utf8");
 
 // ---- README_EN.md：英文头部 + 英文列表 ----
-const enHead = `# 🧠 Awesome ChatGPT Prompts (CN) — Bilingual AI Prompt Hub
+const enHead = `# 🧠 AI Prompts + Account & Payment Guide (CN) — Bilingual AI Starter Hub
 
-A beginner-friendly, **bilingual (中文 / English)** collection of AI prompts, image/video generation tips, and agent skills — covering GPT, Claude, Gemini, and Chinese models (DeepSeek, Kimi, Doubao, etc.). Updated frequently.
+A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **prompt collection** (roles, image/video generation, agent skills) **plus full guides to sign up and pay** — covering GPT, Claude, Gemini, and Chinese models (DeepSeek, Kimi, Doubao, etc.). Updated frequently.
+
+**What's inside:** 📝 Prompt library · 🔐 Account sign-up (US Apple ID / Claude / OpenAI Codex) · 💳 Payment path (Apple Gift Card → in-app subscription) · 🪜 Proxy setup (Clash Verge Rev / FLClash / Shadowrocket + TUN).
+
+> 📱 Setup guide (Chinese): [账号注册与订阅指南](docs/账号注册与订阅指南.md)
 
 🌐 **Live site:** ${SITE}
 🇨🇳 中文版见 [README.md](README.md)
