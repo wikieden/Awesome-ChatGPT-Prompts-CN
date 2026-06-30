@@ -15,122 +15,46 @@
 | 💳 **付费全路径** | Apple 礼品卡购买（Pockyt / 支付宝 / 官网）→ iOS 内购订阅 Claude / ChatGPT | [付费指南](docs/账号注册与订阅指南.md#3-apple-礼品卡购买与充值) |
 | 🪜 **科学上网** | Clash Verge Rev / FLClash / Shadowrocket + TUN 模式 + IP 确认 | [上网指南](docs/账号注册与订阅指南.md#1-科学上网工具按平台选含-tun-模式) |
 
-> 📱 **新手强烈建议先读：[美区账号注册与订阅指南（一条龙）](docs/账号注册与订阅指南.md)** —— 从科学上网到注册建号、再到用礼品卡付费，全路径一篇讲清。
+## 🚀 5 分钟快速开始（新手按顺序走）
 
-## 解除封印咒语
+> 完整一条龙见 **[美区账号注册与订阅指南](docs/账号注册与订阅指南.md)**；下面是四步速览。
 
-#### 如果你想将你的 **ChatGPT** 调教成一只猫娘，最新的教程在 [ChatGPT入门指南](ChatGpt-receipt.md)
-#### 关于注册和使用遇到的问题请看啫喱
+**第 1 步 · 🪜 科学上网**：装代理客户端（Win/Mac/Linux → [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases)；Android → [FLClash](https://github.com/chen08209/FlClash/releases)；iOS → [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)），开 **TUN 模式**，到 [whoer.net](https://whoer.net/zh) 确认 IP 是美国。→ [详细步骤](docs/账号注册与订阅指南.md#1-科学上网工具按平台选含-tun-模式)
 
-1. 如果遇到所在国家不支持服务（County not supported）请用机场全局翻墙，中间电话短信验证用虚拟号码，[虚拟号码接码平台 hero-sms](https://hero-sms.com/cn) 
+> 🪜 **推荐机场**（稳定直连 ChatGPT / Claude / Gemini，支持 4K 流媒体）：
+> - **SSONE**：[点此注册](https://sky.ssonenetwork.com/register?aff=NLEVymB2) ｜ 备用网址导航：[hello36d](https://hello36d.com/register?aff=NLEVymB2)
+> - **精灵学院**：[点此注册](https://jump.riolu.work/register?aff=A6G0ImUB)
+> - 短信验证用虚拟号码：[接码平台 hero-sms](https://hero-sms.com/cn)
 
-   > 🪜 **推荐机场**（稳定直连 ChatGPT / Claude / Gemini，支持 4K 流媒体）：
-   > - **SSONE**：[点此注册](https://sky.ssonenetwork.com/register?aff=NLEVymB2) ｜ 备用网址导航：[hello36d](https://hello36d.com/register?aff=NLEVymB2)
-   > - **精灵学院**：[点此注册](https://jump.riolu.work/register?aff=A6G0ImUB)
+**第 2 步 · 🔐 注册账号**：美区 Apple ID（绑**自己的中国手机号**即可，地址填免税州、付款选 None）；Claude / OpenAI Codex（**必须美国号 + 全程美国 IP + 浏览器无痕**）。→ [详细步骤](docs/账号注册与订阅指南.md#2-美区-app-store-账号apple-id)
 
-## 它能干什么? 直接问它
+**第 3 步 · 💳 付费**：买美区 Apple 礼品卡（[Pockyt 商城](https://shop.pockyt.io/pc/home) 支持国内卡/微信/支付宝；或支付宝小程序 / Apple 官网）→ 充入余额 → **iOS App 内购**订阅 Claude / ChatGPT。→ [详细步骤](docs/账号注册与订阅指南.md#3-apple-礼品卡购买与充值)
 
-> 我是一个训练有素的大型语言模型，可以帮助你回答各种问题，比如关于政治、历史、科学、技术、艺术等方面的问题。我可以帮助你理解一些概念，并为你提供有价值的信息和见解。你可以尝试提出一些问题，看看我能不能帮到你。
->
-> 除了回答问题，我还可以帮助你写一些文章或小说。你只需要给我一些提示和背景信息，我就可以根据你提供的信息来为你写一篇文章或小说。我会尽力为你写出一篇优秀的文章，帮助你实现你的写作目标。
->
-> 除了回答问题和写作，我还可以帮助你进行文本生成。如果你想生成一些随机的文本，你可以向我提供一些模板和关键词，我就可以根据你提供的信息生成一些随机的文本。这些文本可能是一些名言、句子、段落或者小故事，它们都可以根据你提供的信息来生成。我会尽力为你生成有趣、有用的文本，帮助你实现你的目标。
->
-> 还有很多其他的事情，我可以帮助你完成。比如，如果你想知道某个单词的含义，你可以问我，我会告诉你这个单词的含义。如果你想了解一些事情的细节，你也可以问我，我会尽力为你提供有价值的信息。如果你有任何问题，都可以问我，我会尽力为你解答。
->
-> 甚至这个代码库也是我写的。
+**第 4 步 · 📝 用提示词**：打开 [在线版](https://wikieden.github.io/Awesome-ChatGPT-Prompts-CN/) 搜索、一键复制；或直接看下面的 [板块目录](#板块目录)。
 
-1. 回答问题。我能够通过文字回答问题，为用户提供信息。
+## 📝 提示词大全（双语 · 复制即用）
 
-2. 提供建议。我能够根据用户的需求提供专业的建议。
+240+ 条精选提示词，覆盖新手入门、角色扮演、文生图、文生视频、Skill 推荐、提示词技巧六大板块，每条中英对照、标注难度与适用模型。
 
-3. 计算数学问题。我能够快速准确地计算简单的数学问题。
+- 🔎 **在线检索 / 一键复制**：https://wikieden.github.io/Awesome-ChatGPT-Prompts-CN/
+- 📚 想写出更有效的提示词？看下面 [板块目录](#板块目录) 里的「💡 提示词技巧」板块，或读 [ChatGPT 入门指南](ChatGpt-receipt.md)
+- 😺 想把 ChatGPT 调教成猫娘？教程同样在 [ChatGPT 入门指南](ChatGpt-receipt.md)
 
-4. 翻译文本。我能够快速准确地翻译文本，让用户更好地理解内容。
+> 下方「板块目录」及各板块内容由 [`scripts/build.js`](scripts/build.js) 从单一数据源 `web/data/prompts.js` 自动生成，请勿手改生成区。
 
-5. 生成文本。我能够根据提供的信息生成文本，为用户提供更多信息。
+## 💬 交流与支持
 
-6. 写作。我能够根据用户的需求进行写作，为用户提供高质量的文字内容。
+**微信体验交流群** —— 与 AI 爱好者一起探讨前沿信息、交流玩法：
 
-7. 提供知识。我能够根据用户的需求提供专业的知识，为用户提供更多信息。
+![微信群](images/weixingroup.jpg)
 
-8. 提供解决方案。我能够根据用户提出的问题提供解决方案，帮助用户解决实际问题。
+**捐赠支持** —— 如果本项目对你有帮助，欢迎请作者喝杯咖啡，支持持续更新 🙏
 
-9. 提供娱乐。我能够根据用户的需求提供娱乐内容，为用户提供欢乐和放松。
+| 微信 | 支付宝 |
+| --- | --- |
+| ![微信](images/wechat.jpg) | ![支付宝](images/alipay.jpg) |
 
-10. 聊天。我能够通过文字和用户进行交流，提供娱乐和放松。
-### 对于不同行业能做什么
-
-1. 程序员：大家都记得Coplot吧，这个很多层面能做到写好注释或者需求就能直接出例子代码，在你针对某个问题一筹莫展时候，通过问答能快速定位技术方向，答题解决方案。能起到非常好的助手功能
-2. 运营：帮你写文案，假定一些前提条件和文风后直接能生成你需要的文案。
-3. 所有人：现在ChatGPT都取代不了你，但是能给你提升工作效率，堪比2000年前搜索引擎诞生后对人类和很多职业的影响
-
-
-
-### ChatGPT 直接体验（能科学上网就能用）
-
-[ChatGPT Demo](https://chatgpt.voloxr.com)
-
-## 微信体验交流群
-
-加入ChatGPT体验交流群，与AI技术领域的专家和爱好者一起探讨最前沿的信息！在这里，你可以体验到最先进的人工智能技术，与志同道合的人交流，共同提升你的知识水平。不管你是专业人士还是爱好者，都欢迎加入我们的群体！
-![Pic1](images/weixingroup.jpg) 
-
-
-
-
-## 捐赠支持
-
-您好，我们非常感激您对此项目的关注和支持。我们一直在努力，提供最有价值和易于理解的指南。如果您觉得我们的项目对您有所帮助，请考虑捐赠支持我们。您的捐赠将帮助我们不断完善项目内容，为您提供更好的服务，并吸引更多的读者和使用者。谢谢您的支持！
-
-| 微信         | 支付宝           |  
-| ------------ | --------------- |  
-| ![Pic2](images/wechat.jpg)  | ![Pic2](images/alipay.jpg) |  
-
-
-## 一些推荐的OpenAI和ChatGPT二次开发项目
-Unreal OpenAPI 蓝图对接--[OpenAI-Api-Unreal](https://github.com/KellanM/OpenAI-Api-Unreal)
-
-
-# **🧠 CHATGPT提示词**
-
-[ChatGPT](https://chat.openai.com/chat)模型是由[OpenAI](https://openai.com/)训练的大型语言模型，能够生成类似人类的文本。通过为其提供提示，它可以生成继续对话或扩展给定提示的响应。
-
-要开始使用，只需克隆此存储库并使用 README.md 文件中的提示作为 ChatGPT 的输入。您还可以使用此文件中的提示作为创建自己的提示的灵感。
-
-我们希望您发现这些提示有用，并使用 ChatGPT 玩得开心！
-
-**[Huggingface](https://huggingface.co/datasets/fka/awesome-chatgpt-prompts/)**
-
-**下载ChatGPT桌面应用程序**：**[macOS](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64.dmg)** / **[Windows](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64_en-US.msi)** / **[Linux](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/chat-gpt_0.10.1_amd64.deb)**
-
-> i️ 注意：有时，某些提示可能无法按预期工作或可能被 AI 拒绝。请重试，启动新线程，或注销并重新登录。如果这些解决方案不起作用，请尝试使用您自己的句子重写提示，同时保持说明相同。
-> 
-
-### **想要编写有效的提示？**
-
-📖 **[阅读免费电子书](https://fka.gumroad.com/l/art-of-chatgpt-prompting)**
-
-[ChatGPT入门指南](ChatGpt-receipt.md)
-
-
----
-
-### **使用 ChatGPT 桌面应用程序**
-
-*非官方*的 ChatGPT 桌面应用程序提供了一种访问和使用此存储库中的提示的便捷方式。使用该应用程序，您可以轻松导入所有提示并将其与斜杠命令一起使用，例如.此功能消除了每次要使用提示时手动复制和粘贴提示的需要。`/linux_terminal`
-
-> 桌面应用程序是@lencx的一个非官方开源项目。它是ChatGPT网络界面的简单包装器，具有强大的附加功能。
-> 
-
-![https://user-images.githubusercontent.com/196477/208471439-877c2bcf-93ec-4ad9-9cb0-7e4ed7b1756a.png](https://user-images.githubusercontent.com/196477/208471439-877c2bcf-93ec-4ad9-9cb0-7e4ed7b1756a.png)
-
----
-
-### **使用 AI 创建自己的提示**
-
-[Merve Noyan](https://huggingface.co/merve)创建了一个出色的[ChatGPT提示生成器应用程序](https://huggingface.co/spaces/merve/ChatGPT-prompt-generator)，允许用户生成针对他们所需角色量身定制的提示。应用使用此存储库作为其训练数据集。
-
+**相关资源**：[ChatGPT Demo（能科学上网即可体验）](https://chatgpt.voloxr.com) ｜ ChatGPT 桌面应用 [macOS](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64.dmg) · [Windows](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64_en-US.msi) · [Linux](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/chat-gpt_0.10.1_amd64.deb)
 
 ---
 
