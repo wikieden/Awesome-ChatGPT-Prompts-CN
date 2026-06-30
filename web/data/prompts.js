@@ -4887,5 +4887,130 @@ window.PROMPTS = [
     ],
     "source": "整理自 2026 年 6 月各家免费版现状（GPT-5.5 / Claude Sonnet / DeepSeek V4 / Kimi 等）",
     "updated": "2026-06-29"
+  },
+  {
+    "id": "start-2026-mid-model-flood-pick",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "2026 年中「模型大爆发」，新手到底用哪个？",
+    "title_en": "The Mid-2026 Model Flood: Which One Should a Beginner Actually Use?",
+    "body_zh": "2026 年 5–6 月各家几乎同时上新：OpenAI 的 GPT-5.6（号称上百万 token 超长上下文）、谷歌 Gemini 3.5（I/O 上先放出 Flash，Pro 紧随其后）、Anthropic 的 Claude Opus 4.8 与新旗舰 Claude Fable 5（主打长链路智能体与推理），国产这边 DeepSeek、Kimi、豆包、通义、文心、智谱也各自迭代。新手别被版本号绕晕，记住三句话就够：①「随便选一个主流的开始」——日常问答写作，GPT、Claude、Gemini、DeepSeek 任意一个都够用，先用起来比选「最强」重要；②「按任务换模型」——长文档/长资料找上下文大的（GPT-5.6、Gemini、DeepSeek、Kimi），要它「自己动手办事」找智能体强的（Claude、Kimi），画图做视频用专门工具（即梦、可灵、Qwen-Image、Sora）；③「同一个问题问两家对比」——把你真实的问题丢给两三个模型，谁的回答更合你口味就长期用谁。一句话挑选提示词：「我要做 ______，请告诉我现在哪个模型最合适、为什么，并给出一个我能马上照抄的提示词。」",
+    "body_en": "In May–June 2026 nearly everyone shipped at once: OpenAI's GPT-5.6 (touting a roughly million-token ultra-long context), Google's Gemini 3.5 (Flash first at I/O, Pro right after), Anthropic's Claude Opus 4.8 and the new flagship Claude Fable 5 (built for long-horizon agents and reasoning), while China's DeepSeek, Kimi, Doubao, Tongyi, ERNIE, and Zhipu each iterated too. Don't get lost in version numbers — three rules are enough for beginners: (1) Just pick a mainstream one and start — for everyday Q&A and writing, GPT, Claude, Gemini, or DeepSeek are all fine; starting beats hunting for \"the best.\" (2) Switch model by task — for long documents pick a big-context model (GPT-5.6, Gemini, DeepSeek, Kimi); for \"go do it for me\" agent work pick a strong agent (Claude, Kimi); for images/video use dedicated tools (Jimeng, Kling, Qwen-Image, Sora). (3) Ask the same question to two and compare — send your real question to two or three models and stick with whichever answer suits you. One-line picker prompt: \"I want to ______. Tell me which model fits best right now and why, and give me a prompt I can copy immediately.\"",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini",
+      "DeepSeek",
+      "Kimi"
+    ],
+    "tags": [
+      "新手",
+      "选工具",
+      "2026",
+      "模型对比",
+      "GPT-5.6",
+      "Gemini",
+      "Claude"
+    ],
+    "source": "整理自 2026 年 5–6 月模型集中发布报道（GPT-5.6 / Gemini 3.5 / Claude Opus 4.8 与 Fable 5 等）",
+    "updated": "2026-06-30"
+  },
+  {
+    "id": "skill-gemini-spark-daily-brief",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Gemini Spark + Daily Brief：让 AI 在你睡觉时「主动」帮你干活",
+    "title_en": "Gemini Spark + Daily Brief: Let AI Work Proactively While You Sleep",
+    "body_zh": "2026 年 I/O 之后，谷歌把 Gemini App 变成了「会主动办事」的智能体：Spark 跑在云端虚拟机上，能在后台长时间执行任务，不占你手机；Daily Brief 则在你睡觉时整理好 Gmail、日历、Drive，第二天早上给你一份晨间简报。怎么用：打开 Gemini App → 设置 → Spark → 开启 Spark → 授权 Gmail/日历/Drive → 选简报送达时间（多数人选 06:30–07:30）→ 保存。关键提醒：第一份简报比较「通用」，别急着失望——它会根据你「打开了哪些、回复了谁、忽略了什么」学习，到第五天左右才真正贴合你的节奏；Spark 由「任务（要达成的目标）+ 计划（何时自动跑）+ 技能（一组可复用的指令和工具）」三块组成，你可以像写提示词一样给它定义技能。注意：截至 2026 年 6 月，Daily Brief 需要 AI Ultra 订阅，看不到入口多半是账号档位不够。给 Spark 的技能提示词模板：「每天 07:00：汇总过去 24 小时重要邮件和今日日程，标出需要我今天回复/决定的 3 件事，其余只给一句话摘要。」",
+    "body_en": "After I/O 2026, Google turned the Gemini app into a proactive agent: Spark runs on cloud VMs and can execute long-running tasks in the background without tying up your phone, while Daily Brief organizes your Gmail, Calendar, and Drive overnight and hands you a morning summary. How to set it up: open the Gemini app → Settings → Spark → Enable Spark → grant Gmail/Calendar/Drive permissions → choose a delivery time (most pick 06:30–07:30) → Save. Key tip: the first Brief is generic — don't judge too soon; it learns from which items you open, who you reply to, and what you ignore, and by around day five it truly reflects your day. Spark has three parts — a Task (the goal), a Schedule (when it runs automatically), and a Skill (a reusable set of instructions and tools) — and you can define a Skill much like writing a prompt. Note: as of June 2026 Daily Brief requires an AI Ultra subscription, so a missing menu usually means your plan is too low. Skill prompt template for Spark: \"Every day at 07:00: summarize important emails from the last 24 hours and today's schedule, flag the 3 things needing my reply/decision today, and give one-line summaries for the rest.\"",
+    "models": [
+      "Gemini"
+    ],
+    "tags": [
+      "Gemini",
+      "智能体",
+      "主动式AI",
+      "晨间简报",
+      "自动化",
+      "效率"
+    ],
+    "source": "整理自 2026 年 I/O 后 Gemini Spark / Daily Brief 官方介绍与上手报道",
+    "updated": "2026-06-30"
+  },
+  {
+    "id": "image-qwen-image-chinese-text-poster",
+    "category": "image",
+    "level": "beginner",
+    "title_zh": "用 Qwen-Image 做「带准确中文字」的海报 / PPT / 信息图",
+    "title_en": "Use Qwen-Image to Make Posters / Slides / Infographics with Accurate Chinese Text",
+    "body_zh": "过去 AI 出图最大的痛点是「文字乱码」，中文尤其惨。阿里通义的 Qwen-Image（2.0 起 7B 参数、生编一体）专门攻这块，文字渲染是行业领先：能稳定写对中文标题、副标题、段落，连复杂书法都能还原，原生支持 2K 分辨率和最长约 1000 token 的超长指令，特别适合做海报、PPT 风格图、信息图、漫画。出图技巧：①把要显示的文字用引号明确列出，别让模型自己脑补——例如「主标题：夏日特惠；副标题：全场五折；底部小字：活动截止 6 月 30 日」；②交代版式——「竖版海报，标题居中，留白干净，配色蓝白」；③字数别堆太满，文字越少越准；④出来后逐字检查，有错就把那行单独重生成或用「编辑」局部改。一句话提示词模板：「做一张竖版促销海报，主标题『______』、副标题『______』、底部一行小字『______』，简约风、留白多、文字必须清晰准确。」其他可选：即梦、豆包 Seedream、文心一格也在补强中文文字能力，可对比着用。",
+    "body_en": "AI image generation's biggest pain has always been garbled text — especially Chinese. Alibaba Tongyi's Qwen-Image (7B and unified generate-edit since 2.0) targets exactly this, with industry-leading text rendering: it reliably gets Chinese titles, subtitles, and paragraphs right — even complex calligraphy — and natively supports 2K resolution and instructions up to ~1000 tokens, making it ideal for posters, slide-style graphics, infographics, and comics. Tips: (1) List the exact text to display in quotes instead of letting the model improvise — e.g. \"Title: Summer Sale; Subtitle: 50% off everything; Footer: Ends June 30\"; (2) Specify layout — \"vertical poster, centered title, clean whitespace, blue-and-white palette\"; (3) Don't cram too much text — fewer words render more accurately; (4) Proofread character by character, and regenerate or use \"edit\" to fix any single line that's wrong. One-line prompt template: \"Make a vertical promo poster, main title '______', subtitle '______', one footer line '______', minimalist style, lots of whitespace, text must be crisp and accurate.\" Alternatives: Jimeng, Doubao Seedream, and Wenxin Yige are also improving Chinese text — worth comparing.",
+    "models": [
+      "通义",
+      "即梦",
+      "豆包",
+      "文心"
+    ],
+    "tags": [
+      "文生图",
+      "通义",
+      "Qwen-Image",
+      "中文文字",
+      "海报",
+      "信息图",
+      "新手"
+    ],
+    "source": "整理自 2026 年 Qwen-Image / Qwen-Image-2.0 中文文字渲染能力发布信息",
+    "updated": "2026-06-30"
+  },
+  {
+    "id": "craft-ultra-long-context-whole-doc",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "百万级上下文：把「整份资料」一次喂进去，再追问",
+    "title_en": "Million-Token Context: Drop in the Whole Document at Once, Then Ask",
+    "body_zh": "2026 年新模型的上下文窗口越做越大（GPT-5.6 据称约百万 token，Gemini、DeepSeek、Kimi 也都有超长上下文）。对普通人最大的红利不是「写更长」，而是「读更多」：你可以把整份合同、整本说明书、几十页论文、一整个会议记录直接丢进去，让 AI 基于全文回答，而不是你手动复制片段。用好它的三个要点：①一次性给全、并说明任务——「这是一份 40 页的合同全文，请先用 5 句话讲清它在说什么，再列出对我（乙方）潜在不利的条款」；②让它「引用原文 + 标位置」——「每条结论后面附上你依据的原句，方便我核对」，能大幅减少编造；③长资料用「先地图后细节」——先让它给目录式概览，你再挑感兴趣的章节深挖。小贴士：上下文虽大，但「重点放开头和结尾、问题写在最后」依然更稳；涉及隐私/机密资料，先脱敏再上传。一句话提示词：「以下是全文，请只依据其中内容回答，不确定就说不确定，并标出依据的原句：______」。",
+    "body_en": "In 2026 context windows keep growing (GPT-5.6 is said to be ~1M tokens, and Gemini, DeepSeek, and Kimi all offer very long contexts). The biggest win for ordinary users isn't \"writing longer\" but \"reading more\": you can drop in a whole contract, an entire manual, dozens of pages of a paper, or a full meeting transcript and have the AI answer from the complete text instead of you pasting fragments. Three keys to using it well: (1) Give everything at once and state the task — \"This is the full 40-page contract; first explain in 5 sentences what it's about, then list clauses potentially unfavorable to me (Party B)\"; (2) Make it cite the source and mark locations — \"after each conclusion, attach the original sentence you relied on so I can verify\" — which sharply cuts fabrication; (3) For long material go \"map first, then detail\" — ask for a table-of-contents-style overview, then dig into the sections you care about. Tips: even with a big window, putting key info at the start and end with your question last is still more reliable; mask private or confidential data before uploading. One-line prompt: \"Here is the full text. Answer only from its contents, say so if unsure, and mark the original sentence you relied on: ______\"",
+    "models": [
+      "GPT",
+      "Gemini",
+      "DeepSeek",
+      "Kimi"
+    ],
+    "tags": [
+      "提示词技巧",
+      "长上下文",
+      "长文档",
+      "事实核查",
+      "GPT-5.6"
+    ],
+    "source": "整理自 2026 年 6 月各家超长上下文（GPT-5.6 约百万 token 等）报道与长文档实践",
+    "updated": "2026-06-30"
+  },
+  {
+    "id": "role-ai-study-coach-active-recall",
+    "category": "role",
+    "level": "beginner",
+    "title_zh": "AI 学习陪练：把任何资料变成「主动回忆 + 间隔重复」",
+    "title_en": "AI Study Coach: Turn Any Material into Active Recall + Spaced Repetition",
+    "body_zh": "与其让 AI 把知识「讲给你听」，不如让它「考你」——这才是真正记得住的学法。把任意资料（课本章节、文档、笔记、甚至一篇文章）丢给 AI，让它当你的学习陪练，用「主动回忆 + 间隔重复」帮你内化。直接复制这条角色提示词：「你是我的学习陪练。我会发给你一段学习材料。请：①先用 3–5 个要点帮我抓住核心；②然后一次只问我一道题（从易到难，混合『回忆题』和『应用题』），等我回答后再点评对错、补全漏点，再出下一题；③我答错或答得含糊的知识点，请记下来，过几轮后再换个问法考我一次（间隔重复）；④全程不要一次把答案全倒给我，逼我自己想。准备好了就说『发我材料』。」适用各家模型（GPT、Claude、Gemini、DeepSeek、Kimi 都行）。进阶玩法：让它最后导出一份「我的薄弱清单」，下次学习直接从清单开始。",
+    "body_en": "Instead of having AI \"explain\" knowledge to you, have it quiz you — that's how things actually stick. Hand any material (a textbook chapter, a doc, your notes, even an article) to the AI and let it act as your study coach, using active recall and spaced repetition to help you internalize it. Copy this role prompt: \"You are my study coach. I'll send you study material. Please: (1) first capture the core in 3–5 bullet points; (2) then ask me ONE question at a time (easy to hard, mixing recall questions and application questions), and after I answer, judge it, fill the gaps, then ask the next; (3) note any point I get wrong or vague, and after a few rounds re-quiz me on it with a different wording (spaced repetition); (4) never dump the full answer up front — make me think first. When ready, say 'send me the material.'\" Works on any model (GPT, Claude, Gemini, DeepSeek, Kimi). Power move: at the end, have it export a \"my weak-points list\" so your next session starts right there.",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini",
+      "DeepSeek",
+      "Kimi"
+    ],
+    "tags": [
+      "角色提示词",
+      "学习",
+      "主动回忆",
+      "间隔重复",
+      "新手",
+      "复制即用"
+    ],
+    "source": "整理自主动回忆 / 间隔重复学习法与 AI 辅助学习实践",
+    "updated": "2026-06-30"
   }
 ];
